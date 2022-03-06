@@ -82,28 +82,12 @@ Cases to be considered for collisions:
 ## Loop-_de_-Loop
 
 Loop-_de_-Loop for normal circular motion:
-$$
-\begin{align*}
-N = \frac{mv^2}R &- mg =  0 \\
-v^2 &= Rg \\
-\frac{1}{2}mv^2 &= mg(h-2R) \\
-v^2 &= 2g(h-2R) = Rg \\
-2h - 4R &= R \\
-h &= 2.5 R
-\end{align*}
-$$
+
+$$\begin{align*}N &= \frac{mv^2}R - mg =  0 \\ v^2 &= Rg \\ \frac{1}{2}mv^2 &= mg(h-2R) \\ v^2 &= 2g(h-2R) = Rg \\ 2h - 4R &= R \\ h &= 2.5 R\end{align*}$$
+
 For rigid body of radius $r$:
-$$
-\begin{align*}
-N = \frac{mv^2}{R-r} &- mg =  0 \\
-v^2 &= g(R-r) \\
-\frac{1}{2}(1+\beta)mv^2 &= mg(h+2r-2R) \\
-(1+\beta)g(R-r) &= 2g (h+2r-2R) \\
-(1+\beta)(R-r) &= 2h - 4(R-r) \\
-2h &= (5+\beta)(R - r) \\
-h &= \frac{5+\beta}{2}(R-r)
-\end{align*}
-$$
+
+$$\begin{align*}N &= \frac{mv^2}{R-r} - mg =  0 \\ v^2 &= g(R-r) \\ \frac{1}{2}(1+\beta)mv^2 &= mg(h+2r-2R) \\ (1+\beta)g(R-r) &= 2g (h+2r-2R) \\ (1+\beta)(R-r) &= 2h - 4(R-r) \\ 2h &= (5+\beta)(R - r) \\ h &= \frac{5+\beta}{2}(R-r) \end{align*}$$
 
 
 

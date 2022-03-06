@@ -20,7 +20,7 @@ theme:
     code: Roboto Mono
   favicon: assets/favicon.png
   icon:
-    logo: material/notes
+    logo: octicons/repo-24
 
   palette:
     - scheme: slate
