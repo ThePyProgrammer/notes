@@ -18,8 +18,6 @@ It's just everything we have already learnt, but they added angular in front of 
 |$E_K = \frac{1}{2}mv^2$|$E_L = \frac{1}{2}I\omega^2$|
 |$P = \frac{W}{t} = F \cdot v$|$P = \tau \cdot \omega$|
 
-
-
 ## Moment of Inertia, $I$
 
 Do note that $I$ is slightly more cursed, and the following table demonstrates the definition of $I$:
@@ -36,8 +34,6 @@ Do note that $I$ is slightly more cursed, and the following table demonstrates t
 |Solid Sphere|$I = \frac{2}{5}MR^2$|$\frac{2}5$|
 |Hollow Sphere|$I = \frac{2}{3} MR^2$|$\frac{2}3$|
 
-
-
 ## Shifting from Translational to Rotational
 
 We also note that we can relate all the quantities to each other via the variable $r$, as shown below:
@@ -51,8 +47,6 @@ We also note that we can relate all the quantities to each other via the variabl
 |$\vec F \times \vec{r}$|$\vec \tau$|
 |$\vec r \times \vec p$|$\vec L$|
 
-
-
 ## Conservation Cases
 
 Cases to be considered for collisions:
@@ -64,8 +58,6 @@ Cases to be considered for collisions:
 |Completely Inelastic Collision (objects stick together)|COM applies, COE does not|COAM applies, COE does not|
 |Some force acting throughout the motion (e.g. Gravity)|COE applies, COM does not|COE applies, COAM does not|
 
-
-
 ## Ramp
 
 | Name                                           | Quantity                                                     |
@@ -76,8 +68,6 @@ Cases to be considered for collisions:
 | Acceleration of Centre of Mass                 | $a_{cm} = \frac{v_{cm}^2}{2\Delta x} = \frac{g\sin\theta}{1+\beta}$ |
 | Velocity at Top of Loop-_de_-Loop (Radius $R$) | $v_{loop} = \sqrt{g(R-r)}$                                   |
 | Minimum height, $h$ for Loop-_de_-Loop         | $h = \frac{5+\beta}{2}(R-r)$                                 |
-
-
 
 ## Loop-_de_-Loop
 
