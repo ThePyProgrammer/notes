@@ -607,23 +607,29 @@
                 
 
 <h1 id="waves">Waves</h1>
+<p>(yeet.)</p>
+<p>Chapter 2 of PC5131 is Waves... I. This is effectively singular waves, rather than interfering waves. This includes normal wave properties and equations, wave intensity, string waves, polarisation, sound waves (longitudinal waves) and the Doppler Effect. This is relatively easier than the next topic (Waves II) so uh yay thank god only this much is tested in the Common Test on Monday. Anyways yeah good luck, and let's see what comes out of this, right? Aight. See yah.</p>
 <h2 id="basics">Basics</h2>
 <h3 id="wave-quantities">Wave Quantities</h3>
 <div class="arithmatex">\[\begin{align*}\omega &amp;=2\pi f = \frac{2\pi}{T}\\k &amp;= \frac{2\pi}{\lambda}\\v &amp;= f\lambda = \frac{f}{T} = \frac{\omega}{k}\end{align*}\]</div>
 <h3 id="wave-equation">Wave Equation</h3>
 <div class="arithmatex">\[\begin{align*}\psi(x, t)&amp;=A\sin(\phi_x -\phi_t + \phi_0)\\&amp;=A\sin(kx-\omega t+\phi_0)\end{align*}\]</div>
-<p>For wave moving backwards, <span class="arithmatex">\(\psi(x, t) = A\sin(kx+\omega t+\phi_0)\)</span>.</p>
+<p>For wave moving backwards:</p>
+<div class="arithmatex">\[\psi(x, t) = A\sin(kx+\omega t+\phi_0)\]</div>
 <h3 id="phase-difference">Phase Difference</h3>
-<div class="arithmatex">\[\begin{align*}\Delta\phi &amp;= \phi_2 - \phi_1 \\ &amp;= (kx_2 - \omega t + \phi_0) - (kx_1-\omega t+\phi_0) \\ &amp;= k(x_2 - x_1) \\ &amp;= k\Delta x \\ &amp;= 2\pi \frac{\Delta x}\lambda \end{align*}\]</div>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\begin{align*}\Delta\phi &amp;= \phi_2 - \phi_1 \\ &amp;= (kx_2 - \omega t + \phi_0) - (kx_1-\omega t+\phi_0) \\ &amp;= k(x_2 - x_1) \\ &amp;= k\Delta x \\ &amp;= 2\pi \frac{\Delta x}\lambda \\ &amp;= -\omega \Delta t \\ &amp;=-2\pi \frac{\Delta t}{T} \end{align*}\)</span>\)</span>
+This applies to both <span class="arithmatex">\(\Delta t\)</span> and <span class="arithmatex">\(\Delta x\)</span>, which is great. If the wave is moving backwards, the phase difference in terms of <span class="arithmatex">\(\Delta t\)</span> is positive, not negative.</p>
 <h2 id="intensity-of-wave">Intensity of Wave</h2>
-<div class="arithmatex">\[\begin{align*} I &amp;= \frac{P}{A}\\&amp;=\frac{P}{4\pi r^2} \\ I &amp;\propto \frac{1}{r^2} \end{align*}\]</div>
+<div class="arithmatex">\[\begin{align*} I &amp;= \frac{P}{A}\\&amp;=\frac{P}{4\pi r^2} \\ I &amp;\propto \frac{1}{r^2} \\ \frac{I_1}{I_2} &amp;= \left(\frac{r_2}{r_1}\right)^2 \end{align*}\]</div>
 <h2 id="string-wave">String Wave</h2>
 <div class="arithmatex">\[v = \sqrt{\frac{T}{\mu}}\]</div>
 <h2 id="polarisation">Polarisation</h2>
 <h3 id="polarising-filter">Polarising Filter</h3>
 <div class="arithmatex">\[\begin{align*}I_1 &amp;= \frac{I_0}{2}\\A_{n+1} &amp;= A_n \cos\phi_{n+1,n}\\I_{n+1} &amp;= I_n \cos^2\phi_{n+1,n}\end{align*}\]</div>
 <h3 id="brewsters-angle">Brewster's Angle</h3>
-<div class="arithmatex">\[\begin{align*}n_a \sin\theta_i &amp;= n_a \sin\theta_{reflect} \\ n_a \sin\theta_i &amp;= n_b \sin\theta_{refract} \\ n_a \sin\theta_{reflect} &amp;= n_b \sin\theta_{refract} \\ \theta_{reflect} &amp;= \theta_{brewster} = \theta_b \\ \theta_{refract} &amp;= \theta_{polarised} = \theta_p \\ \theta_{b} + \theta_{p} &amp;= \frac{\pi}2 \\ \sin\theta_p &amp;= \cos\theta_b \\ n_a \sin\theta_{b} &amp;= n_b \sin\theta_{p} = n_b\cos\theta_b \\ \tan\theta_b &amp;= \frac{n_b}{n_a} \\ 
+<div class="arithmatex">\[\begin{align*}n_a \sin\theta_i &amp;= n_a \sin\theta_{reflect} \\ n_a \sin\theta_i &amp;= n_b \sin\theta_{refract} \\ n_a \sin\theta_{reflect} &amp;= n_b \sin\theta_{refract}\end{align*}\]</div>
+<p>From here, we note the following for <strong>Brewster's Angle</strong>, which is defined as <span class="arithmatex">\(\theta_b\)</span>.</p>
+<div class="arithmatex">\[\begin{align*}\theta_{reflect} &amp;= \theta_{brewster} = \theta_b \\ \theta_{refract} &amp;= \theta_{polarised} = \theta_p \\ \theta_{b} + \theta_{p} &amp;= \frac{\pi}2 \\ \sin\theta_p &amp;= \cos\theta_b \\ n_a \sin\theta_{b} &amp;= n_b \sin\theta_{p} = n_b\cos\theta_b \\ \frac{\sin\theta_b}{\cos\theta_b} &amp;= \frac{n_b}{n_a} \\ \tan\theta_b &amp;= \frac{n_b}{n_a} \\ 
 \theta_b &amp;= tan^{-1}\left(\frac{n_b}{n_a} \right)\end{align*}\]</div>
 <h2 id="sound">Sound</h2>
 <h3 id="speeds-of-sound">Speeds of Sound</h3>
@@ -636,12 +642,16 @@
 </thead>
 <tbody>
 <tr>
-<td>0 °C (Standard Temperature and Pressure)</td>
+<td>0°C (Standard Temperature and Pressure)</td>
 <td>330 m/s</td>
 </tr>
 <tr>
-<td>30 °C (Room Temperature and Pressure)</td>
+<td>30°C (Room Temperature and Pressure)</td>
 <td>343 m/s</td>
+</tr>
+<tr>
+<td>T°C (Any Temperature)</td>
+<td><span class="arithmatex">\(331.5 \times \sqrt{1 + \frac{T}{273.15}}\)</span></td>
 </tr>
 </tbody>
 </table>
