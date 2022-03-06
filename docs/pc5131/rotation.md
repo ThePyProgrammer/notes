@@ -2,6 +2,8 @@
 
 (yeet.)
 
+Chapter 1 of PC5131 is Rotational Mechanics, which is problematic. The topic is just a scam, since it is just all of Mechanics but with Angular (not the painful JS Framework). Surmised below is a list of equations which can probably help one understand Rotational Mechanics in the context of normal Mechanical concepts. Good Luck.
+
 ## Translational and Rotational Counterparts
 
 It's just everything we have already learnt, but they added angular in front of it. So let's just walk through a list of equations, and their rotational counterparts.
