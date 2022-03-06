@@ -1,7 +1,9 @@
-site_name: AstroSite
+site_name: Notes
 
 theme:
   name: 'material'
+  features:
+    - navigation.tabs
 
   # 404 page
   static_templates:
@@ -18,7 +20,7 @@ theme:
     code: Roboto Mono
   favicon: assets/favicon.png
   icon:
-    logo: material/telescope
+    logo: material/notes
 
   palette:
     - scheme: slate
@@ -47,6 +49,10 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.arithmatex:
       generic: true
+  - attr_list
+  - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -55,4 +61,5 @@ extra_javascript:
 
 nav:
   - Home: index.md
-  - 'Getting Started.md'
+  - PC5131:
+      - Rotational Mechanics: pc5131/rotation.md
