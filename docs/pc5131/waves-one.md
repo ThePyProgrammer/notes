@@ -19,7 +19,7 @@ $$\begin{align*} I &= \frac{P}{A}\\&=\frac{P}{4\pi r^2} \\ I &\propto \frac{1}{r
 
 ## String Wave
 
-$$v = \frac{T}{\mu}$$
+$$v = \sqrt{\frac{T}{\mu}}$$
 
 ## Polarisation
 
