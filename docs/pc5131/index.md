@@ -1,6 +1,6 @@
 # Checklist
 
-Currently completely:
+Currently completed:
 
 - [x] Rotational Mechanics
 - [x] Waves I
