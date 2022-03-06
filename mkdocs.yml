@@ -65,6 +65,6 @@ extra_javascript:
 nav:
   - Home: index.md
   - PC5131:
-      - PC5131 Notes: pc5131/index.md
+      - Checklist: pc5131/index.md
       - Rotational Mechanics: pc5131/rotation.md
       - Waves I: pc5131/waves-one.md
