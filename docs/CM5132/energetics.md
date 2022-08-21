@@ -63,6 +63,8 @@ Formation Enthalpy is the enthalpy of the reaction that forms the compound from 
 
 $$\frac{1}{2}\text{ A}_2\text{ (g) } + \text{ B (s) } + \text{ C (graphite)} \rightarrow \text{ABC}\quad\quad\Delta H_f$$
 
+For elements in their most stable allotropic state, their $\Delta H_f$ is 0. This is why the Formation Enthalpies of Graphite and Oxygen gas are 0, while those of Diamond or Ozone are not.
+
 #### Using $\Delta H_f$ meaningfully
 An extension of this is seen when we are required to compute the enthalpy change of any given reaction. Since we can simplify all reactants to the their allotropic elements via the reverse reaction, and produce the products from said allotropes, we can essentially represent the the reaction enthalpy as follows:
 
