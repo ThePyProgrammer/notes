@@ -10,12 +10,12 @@
 |Formation Enthalpy|$\Delta H_f$|Enthalpy change to form one mole of molecule|
 |Combustion Enthalpy|$\Delta H_c$|Enthalpy change to combust one mole of molecule|
 |Neutralisation Enthalpy|$\Delta H_n$|Enthalpy change to form one mole of water in neutralisation|
-|Atomization Enthalpy|$\Delta H_a$|Enthalpy change to form one mole of element for uni-elemental or to react one mole of molecule for multi-elemental molecules|
+|Atomization Enthalpy|$\Delta H_a$|Enthalpy change to form one mole of element for uni-elemental or to react one mole of molecule for multi-elemental molecules (always endothermic)|
 |Bond Energy|$BE$|Energy required to break one mole of said bond|
 |Lattice Energy|$\Delta H_{LE}$|Energy required to dissociated an ionic lattice into gaseous ions|
 |$n$th Ionization Energy|$\Delta H_{IE, n}$|Energy required for element to release $n$th electron|
 |$n$th Electron Affinity|$\Delta H_{EA, n}$|Energy required for element to accept $n$th electron|
-|Hydration Enthalpy|$\Delta H_{hyd}$|Energy required to dissolve gaseous ions into water|
+|Hydration Enthalpy|$\Delta H_{hyd}$|Energy required to dissolve gaseous ions into water (always exothermic)|
 |Solution Enthalpy|$\Delta H_{sol}$|Energy required to dissolve anything into water|
 
 ## First Law of Thermodynamics
