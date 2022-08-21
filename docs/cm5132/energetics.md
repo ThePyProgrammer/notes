@@ -8,11 +8,11 @@
 |Name|Symbol|Definition|
 |---|---|--------------|
 |Formation Enthalpy|$\Delta H_f$|Enthalpy change to form one mole of molecule|
-|Combustion Enthalpy|$\Delta H_c$|Enthalpy change to combust one mole of molecule|
+|Combustion Enthalpy|$\Delta H_c$|Enthalpy change to combust one mole of molecule (always exothermic)|
 |Neutralisation Enthalpy|$\Delta H_n$|Enthalpy change to form one mole of water in neutralisation|
 |Atomization Enthalpy|$\Delta H_a$|Enthalpy change to form one mole of element for uni-elemental or to react one mole of molecule for multi-elemental molecules (always endothermic)|
-|Bond Energy|$BE$|Energy required to break one mole of said bond|
-|Lattice Energy|$\Delta H_\text{LE}$|Energy required to dissociated a solid ionic lattice into gaseous ions|
+|Bond Energy|$BE$|Energy required to break one mole of said bond (always endothermic)|
+|Lattice Energy|$\Delta H_\text{LE}$|Energy required to dissociated a solid ionic lattice into gaseous ions (always endothermic)|
 |$n$th Ionization Energy|$\Delta H_{n\text{th IE}}$|Energy required for element to release $n$th electron|
 |$n$th Electron Affinity|$\Delta H_{n\text{th EA}}$|Energy required for element to accept $n$th electron|
 |Hydration Enthalpy|$\Delta H_{hyd}$|Energy required to dissolve gaseous ions into water (always exothermic)|
