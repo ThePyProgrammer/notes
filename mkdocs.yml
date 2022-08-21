@@ -4,6 +4,8 @@ theme:
   name: 'material'
   features:
     - navigation.tabs
+    - search.suggest
+    - search.share
 
   # 404 page
   static_templates:
@@ -23,7 +25,8 @@ theme:
     logo: octicons/repo-24
 
   palette:
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: black
       toggle:
         icon: material/toggle-switch
@@ -33,6 +36,9 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
+
+extra_css:
+    - stylesheets/style.css
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -68,3 +74,18 @@ nav:
       - Checklist: pc5131/index.md
       - Rotational Mechanics: pc5131/rotation.md
       - Waves I: pc5131/waves-one.md
+  - PC5132:
+      - Checklist: pc5132/index.md
+      - Chapter 4 Practice Qns: pc5132/chapter4.pdf
+      - Chapter 5 Practice Qns: pc5132/chapter5.pdf
+  - CM5132:
+      - Home: cm5132/index.md
+      - cm5132/energetics.md
+
+
+extra:
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/ThePyProgrammer/notes
+
+copyright: Copyright &copy; 2022 Prannaya Gupta
