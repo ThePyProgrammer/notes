@@ -1,0 +1,257 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tcolorbox}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+\floatname{algorithm}{Algorithm}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{10} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{10}  % for normal
+
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\usepackage{listings}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+morekeywords={self},              % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={MyClass,__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=tb,                         % Any extra options here
+showstringspaces=false,
+    breakatwhitespace=false,         
+    breaklines=true,  
+}}
+
+
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+\pythonstyle
+\lstset{#1}
+}
+{}
+
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+\pythonstyle
+\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+ 
+\newcommand{\arraySpaceFive}[5]{%
+\begin{center}%
+\begin{tabular}{|c|c|c|c|c|}%
+\hline #1 & #2 & #3 & #4 & #5 \\ \hline %
+\end{tabular} %
+\end{center} %
+}
+
+\newcommand{\arraySpaceFour}[4]{%
+\begin{center}%
+\begin{tabular}{|c|c|c|c|}%
+\hline #1 & #2 & #3 & #4 \\ \hline %
+\end{tabular} %
+\end{center} %
+}
+
+\title{CS5132 PA1 Report}
+\author{Prannaya Gupta (M22504)}
+
+\begin{document}
+
+\maketitle
+
+\section{Explaining the Algorithm}
+The solution is to use a \textbf{deque}. We illustrate it with an altered version of the provided prompt (in order and taken on 18th July 2022, with $k = 3$):
+\begin{enumerate}
+    \item Melissa (Expiry date: 16-Apr-2022), vacation trip booked on 17-Sep-2022
+    \item Shamir (Expiry date: 10-Oct-2022), vacation trip booked on 30-Jul-2022
+    \item Clarice (Expiry date: 20-Nov-2022), business trip booked on 31-Aug-2022
+    \item Jacky (Expiry date: 19-Nov-2023), schooling trip booked on 17-Sep-2022
+    \item Priya (Expiry date: 11-Sep-2022), no vacation booked
+\end{enumerate} 
+\\
+First, since we know $N = 5$, thus $n = N - k + 1 = 5 - 3 + 1 = 3$.\\
+\\ We start with the following deque (of size $k = 3$):
+\arraySpaceFive{}{}{}{}{}
+
+Following this, we start by adding the first element, who is Melissa, to the tail, thus we have the following deque now (Note: we use the indices to label):
+\arraySpaceFive{0}{}{}{}{}
+
+Now, we move to the next element, and we remove all the elements from the tail that are of lower priority than the next element, then we insert the new element. \\
+\\
+Melissa and Shamir are both either expired or 180 days to being expired, are both going for vacations as well, hence the trip dates are crucial. Since Shamir’s trip date is before Melissa’s trip date, Melissa (0) is removed and then Shamir (1) is added.
+\arraySpaceFive{}{1}{}{}{}
+
+From here, we move to the next element until we get to the end of the window (which is the 3rd element). First, we remove Shamir (1) and add Clarice (2). At this stage, we move to removing this value and adding it into the final list, which is Clarice (2). We also check if the first value in the deque is a value ahead of a window behind, which would be 1. However, since Shamir isn’t in the deque (thanks to the previous step), we ignore it. If he were, we would have removed him from the deque.
+\arraySpaceFive{}{}{2}{}{}
+
+This same thing continues in the following sequence:
+\arraySpaceFive{}{}{2}{3}{}
+\arraySpaceFive{}{}{}{}{4}
+
+Thus, we end up with Clarice (2) in the list and both Jacky and Priya not in the list. This is because both are of lower priority that Clarice.
+\\\\
+Essentially we have the following pseudocode:
+\begin{algorithm}[H]
+\caption{The Sliding Window Maximum}
+\label{alg:studentmodel}
+\begin{algorithmic}[1]
+    \Procedure{SlidingMax}{$a, k$} \Comment{Find maximums as an array}
+        \State $N = $\texttt{len}$(a)$
+        \State $n = N - k + 1$
+        \State $d = $\texttt{deque()}
+        \State $c = $\texttt{[]}
+        \For{\texttt{i = 1 to N-1}}
+        \While{\texttt{len}$(d) \neq 0$ and \texttt{a[i] > a[d.peekLast]} }
+            \State \texttt{d.removeLast()}
+        \EndWhile
+        \State \texttt{deq.addLast}$(i)$
+        \If{$i \geq n-1$}
+        \If{\texttt{i not in c}}
+            \State \texttt{c.add(a[d.first])}
+        \EndIf
+        \If{\texttt{d.first }$=i-n+1$}
+        \State \texttt{d.removeFirst()}
+        \EndIf
+        \EndIf
+        \EndFor
+        \State \textbf{return} $c$
+    \EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+The time complexity of this algorithm is \textbf{O(N)} (since the while loop is effectively a removal of almost all $N$ elements in the list, so $T(N) = 2N$. The space complexity is \textbf{O(N)} due to the inclusion of an auxillary array.
+
+\section{Testing the Algorithm}
+To test the algorithm, the following test cases are proposed:
+
+\subsection{Priority Testing}
+
+Evaluating based on the deadline for this assignment, which is 14th August 2022, we take the following people in:
+\begin{enumerate}
+    \item Melissa (Expiry date: 22-Nov-2022), business trip booked on 12-Dec-2022
+    \item Shamir (Expiry date: 02-Mar-2023), business trip booked on 12-Dec-2022
+    \item Clarice (Expiry date: 02-Mar-2023), schooling trip booked on 12-Dec-2022
+    \item Jacky (Expiry date: 02-Mar-2023), schooling trip booked on 11-Apr-2022
+\end{enumerate} 
+
+This case was determined by the following conditions:
+\begin{itemize}
+    \item Expiry Date for Melissa is 100 Days from Today (\textit{effectively} expired)
+    \item Expiry Dates for Shamir, Clarice and Jacky are 200 Days from Today (not \textit{effectively} expired)
+    \item Trip Dates for Melissa, Shamir and Clarice are 120 Days from Today
+    \item Trip Date for Jacky are 240 Days from Today (\textit{much} later)
+\end{itemize}
+
+We spin this same configuration around and then spin $k$ between 1 and 4. This way, we can test whether the priorities themselves work, and whether the deque logic actually works.
+
+\subsubsection{Sample Tests}
+\textbf{Test 1}
+\begin{tcolorbox}
+\texttt{4,14-Aug-2022} \\
+\texttt{0,T001324,Melissa,22-Nov-2022,12-Dec-2022,B} \\
+\texttt{1,E011964,Shamir,02-Mar-2023,12-Dec-2022,B} \\
+\texttt{2,E013285,Clarice,02-Mar-2023,12-Dec-2022,S} \\
+\texttt{3,T793412,Jacky,02-Mar-2023,11-Apr-2023,S}
+\end{tcolorbox}
+\begin{tcolorbox}
+$k = 2$: \texttt{[0. T001324 (Melissa), 2. E013285 (Clarice)]} \\
+$k = 3$: \texttt{[0. T001324 (Melissa), 2. E013285 (Clarice)]} \\
+$k = 4$: \texttt{[0. T001324 (Melissa), 1. E011964 (Shamir), 2. E013285 (Clarice), 3. T793412 (Jacky)]}
+\end{tcolorbox}
+
+\newpage
+\textbf{Test 2}
+\begin{tcolorbox}
+\texttt{4,14-Aug-2022} \\
+\texttt{0,T793412,Jacky,02-Mar-2023,11-Apr-2023,S} \\
+\texttt{1,E013285,Clarice,02-Mar-2023,12-Dec-2022,S} \\
+\texttt{2,E011964,Shamir,02-Mar-2023,12-Dec-2022,B} \\
+\texttt{3,T001324,Melissa,22-Nov-2022,12-Dec-2022,B}
+\end{tcolorbox}
+\begin{tcolorbox}
+$k = 2$: \texttt{[1. E013285 (Clarice), 3. T001324 (Melissa)]} \\
+$k = 3$: \texttt{[1. E013285 (Clarice), 3. T001324 (Melissa)]} \\
+$k = 4$: \texttt{[0. T793412 (Jacky), 1. E013285 (Clarice), 2. E011964 (Shamir), 3. T001324 (Melissa)]}
+\end{tcolorbox}
+
+\subsection{Corner Case Testing}
+To isolate corner cases, we uh wrack our brain multiple times. \textit{No biggie.}
+
+\subsubsection{Case 1: All are the same}
+
+Ideally if all the values are the same, it only picks the first few samples due to the fact that we should prioritize the earlier applicants.
+\begin{tcolorbox}
+\texttt{10,14-Aug-2022} \\
+\texttt{0,T001324,Melissa,22-Nov-2022,12-Dec-2022,B} \\
+\texttt{1,T001324,Shamir,22-Nov-2022,12-Dec-2022,B} \\
+\texttt{2,T001324,Clarice,22-Nov-2022,12-Dec-2022,B} \\
+\texttt{3,T001324,Jacky,22-Nov-2022,12-Dec-2022,B} \\
+\texttt{4,T001324,Priya,22-Nov-2022,12-Dec-2022,B} \\
+\texttt{5,T001324,Amy,22-Nov-2022,12-Dec-2022,B} \\
+\texttt{6,T001324,Jake,22-Nov-2022,12-Dec-2022,B} \\
+\texttt{7,T001324,Leonard,22-Nov-2022,12-Dec-2022,B} \\
+\texttt{8,T001324,Jeff,22-Nov-2022,12-Dec-2022,B} \\
+\texttt{9,T001324,Jim,22-Nov-2022,12-Dec-2022,B}
+\end{tcolorbox}
+\begin{tcolorbox}
+$k = 2$: \texttt{[0. T001324 (Melissa), 1. T001324 (Shamir)]} \\
+$k = 3$: \texttt{[0. T001324 (Melissa), 1. T001324 (Shamir), 2. T001324 (Clarice)]} \\
+... and so on and so forth.
+\end{tcolorbox}
+
+\subsubsection{Case 2: (I lose marks for not being able to think of a 5th Case)}
+
+\newpage
+\subsection{Stress Testing}
+To test out the values, we randomly determine the expiry date between -180 and 360 days away from today, the trip date as between 0 and 360 days away from today, and randomly assign the trip priority between \texttt{"B"}, \texttt{"S"}, \texttt{"V"} and \texttt{"N"}. We randomly generate 10,000 such samples to test how much stress the algorithm can truly take. We test $k = 2$ (which coalesces to one value if it is between 1 and 9998, meant to test if it can take a large window) and $k = 9999$ (which would show if it can conduct pair-to-pair checks). It passes successfully, and due to the volume of test cases, I have instead placed it on the \href{https://wormhole.app/xYvnv#KlboJb0ljsMSXtfYUzoVsg}{web}.
+\\
+\\The code (in Python since that's easier to code in) is as follows:
+
+\begin{python}
+# Stress Testing
+
+import datetime as dt
+from random import randint, shuffle, choice
+today = dt.datetime.now()
+
+def randomSample():
+    expiry = (today + dt.timedelta(randint(-180,360))).strftime("%d-%b-%Y")
+    tripType = choice(["B", "S", "V", "N"])
+    trip = (today + dt.timedelta(randint(0,360))).strftime("%d-%b-%Y") if tripType != "N" else "NIL"
+    return (i, "", "", expiry, trip, tripType)
+
+file = open("tests/applicants3.csv", "w+")
+print("10000,14-Aug-2022", file=file)
+for i in range(10000):
+    print(*randomSample(), sep=",", file=file)
+
+file.close()
+\end{python}
+
+\end{document}

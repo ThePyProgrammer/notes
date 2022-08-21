@@ -1,0 +1,264 @@
+\documentclass[a4paper, 12pt, addpoints]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{wasysym}
+\printanswers
+\title{Chapter 5 \textbf{Blackbody Radiation}}
+\author{Prannaya Gupta}
+\date{$12^{\text{th}}$ August 2022}
+\begin{document}
+
+\maketitle
+
+
+\begin{tcolorbox}
+Unless otherwise stated:
+\begin{align*}
+\text{Stefan-Boltzmann Constant, }\sigma &= 5.670 \times 10^{-8}\text{ W m${}^{-2}$ K${}^{-4}$} \\
+\text{Wien's Displacement Constant, }b &= 2.898 \times 10^{-3} \text{ m K} \\
+\text{Boltzmann Constant, }k_\text{B} &= 1.381 \times 10^{-23}\text{ m${}^2$ kg s${}^{-2}$ K${}^{-1}$} \\
+\text{Planck's Constant, }h &= 6.626 \times 10^{-34}\text{ J s} \\
+\text{Speed of Light, }c &= 3.00 \times 10^8 \text{ m/s}
+\end{align*}
+\end{tcolorbox}
+\newpage
+\section{Discussion Questions}
+\begin{questions}
+\question Consider a black body of surface area $20.0\text{ cm}^2$ and a temperature of 5000 K.
+\begin{parts}
+\part How much power does it radiate?
+\begin{tcolorbox}
+\textbf{Solution:} \\
+First off, knowing this is a perfect black body, the emissivity of the object, $e = 1$. By the Stefan-Boltzmann Law, we have the following:
+\begin{align*}
+P &= Ae\sigma T^4 \\
+&= (20.0 \times 10^{-4})(1)(5.670 \times 10^{-8})(5000)^4 \\
+&= 70875\text{ W} \\
+&\approx \bf{7.09 \times 10^4\textbf{ W}}\text{ (3 s.f.)}
+\end{align*}
+\end{tcolorbox}
+\part At what wavelength does it radiate most intensely?
+\begin{tcolorbox}
+\textbf{Solution:} \\
+To be fair, you could maximise the Planck's Radiation Law result, but since it is already given via Wien's Displacement Law, we have the following result:
+\begin{align*}
+\lambda_\text{max} &= \frac{b}{T} \\
+&= \frac{2.898 \times 10^{-3}}{5000} \\
+&= 5.796 \times 10^{-7} \text{ m} \\
+&\approx \textbf{580 nm}\text{ (3 s.f.)}
+\end{align*}
+\end{tcolorbox}
+\end{parts}
+
+\question It is determined that the wavelength which is radiated most intensely by the sun has a wavelength of 502 nm. Determine the temperature of the Sun's surface to an appropriate number of significant figures.
+\begin{tcolorbox}
+\textbf{Solution:} \\
+Again, we use Wien's displacement law, but turn it over its head this time.
+\begin{align*}
+\lambda_\text{max} &= \frac{b}{T_{\astrosun}} \\
+T_{\astrosun} &= \frac{2.898 \times 10^{-3}}{502 \times 10^{-9}} \\
+&= 5772.9\text{ K} \\
+&\approx \textbf{5770 K}\text{ (3 s.f.)}
+\end{align*}
+\end{tcolorbox}
+\newpage
+\question The intensity of EM radiation incident on the Earth's atmosphere is 1.36 kW m${}^{-2}$. The Earth orbits the Sun with a radius of $1.5 \times 10^{11}$ m. The Radius of the Sun is $7.0 \times 10^8$ m. Estimate the temperature of the surface of the Sun to an appropriate precision. State any assumptions made.
+\begin{tcolorbox}
+\textbf{Solution:} \\
+Sticking with the simple assumption that the Earth rotates in a circular orbit around the Sun and that the Sun is a homogenous blackbody (which, as we know, is NOT the case), we note that intensity is given by power divided by unit area at a given radius away from the centre. By the Stefan-Boltzmann Law, we have the following expression:
+\begin{align*}
+P &= Ae\sigma T^4 \\
+&= (4\pi R_{\astrosun} ^2)(1)(5.670 \times 10^{-8})T_{\astrosun}^4
+\end{align*}
+
+From here, we move on to the intensity calculations as follows:
+\begin{align*}
+I &= \frac{P}{4\pi d_\text{SE}^2} \\
+1.36\times 10^3 &= \frac{(4\pi R_{\astrosun} ^2)(1)(5.670 \times 10^{-8})T_{\astrosun}^4}{4\pi d_\text{SE}^2} \\
+T_{\astrosun} &= \sqrt[4]{\frac{(1.5\times 10^{11})^2 \times 1.36 \times 10^3}{(5.670\times10^{-8})\times(7.0\times 10^8)^2}} \\
+&= 5760.837\text{ K} \\
+&= \textbf{5800 K}\text{ (2 s.f.)}
+\end{align*}
+
+\end{tcolorbox}
+\end{questions}
+\newpage
+
+\section{Practice Questions}
+
+\begin{questions}
+\question The tungsten filament of a light bulb is heated to a temperature of 3000 \textdegree C when the bulb operates normally. Assume that the filament behaves as a blackbody.
+
+\begin{parts}
+\part What is the intensity of the electromagnetic radiation emitted by the filament?
+\begin{tcolorbox}
+\textbf{Solution:} \\
+We use the Stefan-Boltzmann Law to solve this problem, but ignore $A$.
+\begin{align*}
+I &= e\sigma T^4 \\
+&= (1)(5.670\times 10^{-8})(3273)^4 \\
+&= 6.5068\times 10^6 \\
+&\approx \bf{6.51 \times 10^6\textbf{ W}}\text{ (3 s.f.)}
+\end{align*}
+\end{tcolorbox}
+
+\part At what frequency does the filament radiate most intensely? Within which region of the EM spectrum does this frequency lie?
+\begin{tcolorbox}
+\textbf{Solution:} \\
+We use the notions that $\lambda_\text{peak}T = b$ and $c = f\lambda$, to combine and get the following expression for $f$.
+\begin{align*}
+f &= \frac{cT}{b} \\
+&= \frac{3.00 \times 10^8 \times 3273}{2.898 \times 10^{-3}} \\
+&= 3.3882 \times 10^{14} \\
+&\approx \bf{3.39 \times 10^{14}}\textbf{ Hz}\text{ (2 s.f.)}
+\end{align*}
+
+This frequency of light occurs in the \textbf{Infrared Spectrum}.
+\end{tcolorbox}
+
+\end{parts}
+
+\question The temperature of the surface of the sun is 5778 K. Determine the wavelength at which electromagnetic radiation is emitted with the maximum intensity by the Sun's surface. What colour is this?
+
+
+\begin{tcolorbox}
+\textbf{Solution:} \\
+Use Wien's Displacement Law as follows.
+\begin{align*}
+\lambda_\text{peak} &= \frac{b}{T} \\
+&= \frac{2.898\times 10^{-3}}{5778} \\
+&= 5.0156 \times 10^{-7}\text{ m} \\
+&\approx \textbf{502 nm}\text{ (3 s.f.)}
+\end{align*}
+
+This is \textbf{green} light.
+\end{tcolorbox}
+
+\question In every direction, there is a low-energy and uniform radiation that fills the universes (CMBR). The intensity of this radiation is greatest at wavelength of 1.05 mm.
+\begin{parts}
+\part Assuming that the universe is a blackbody, what is the background temperature of the universe?
+\begin{tcolorbox}
+\textbf{Solution:} \\
+Use Wien's Displacement Law again as follows:
+\begin{align*}
+\lambda_\text{peak} &= \frac{b}{T} \\
+T &= \frac{2.898\times 10^{-3}}{1.05 \times 10^{-3}} \\
+&= \textbf{2.76 K}
+\end{align*}
+\end{tcolorbox}
+\part Is it fair to assume that the universe is a blackbody?
+\begin{tcolorbox}
+\textbf{Solution:} \\
+Well, not exactly. As per Hubble's Law, we do know that the universe is expanding linearly, and since we know that the photons are not necessarily being stopped from exiting said universe to go beyond, the universe cannot in fact be a black body. Essentially, the universe can't be said to be a blackbody due to the fact that it doesn't stop photons from exiting the universe, although it kind of does, simply by being infinite. Even if we consider Brane Cosmology, photons from our plane of being are unable to travel to parallel planes so they are actually exiting the universe. But still, while it is arguable, we note that the photons can still exist the universe at infinity.
+\end{tcolorbox}
+\end{parts}
+\end{questions}
+
+\newpage
+\section{Challenging Questions}
+
+\begin{questions}
+\question The filament of a light bulb is cylindrical with length $l =$20 mm and radius $r = 0.05$ mm. The filament is maintained a temperature $T = 5000\text{ K}$ by an electric current. The filament behave approximately as a black body, emitting radiation isotropically. At night, you observe the light bulb from a distance $D = 10$ km with the pupil of your eye fully dilated to radius $\rho = 3$ mm.
+
+\begin{parts}
+\part What is the total power radiated by the filament?
+\begin{tcolorbox}
+\textbf{Solution:} \\
+Using the Stefan-Boltzmann Law, we can derive this total power.
+\begin{align*}
+P &= Ae\sigma T^4 \\
+&= 2\pi r(r+l)e\sigma T^4 \\
+&= 2\pi (0.05\times 10^{-3})(20.05 \times 10^{-3})(1.0)(5.670 \times 10^{-8})(5000)^4 \\
+&= 223.22\text{ W} \\
+&= \textbf{220 W}\text{ (2 s.f.)}
+\end{align*}
+\end{tcolorbox}
+
+\part How much radiation power enters your eye?
+\begin{tcolorbox}
+\textbf{Solution:} \\
+We first determine the intensity at $D$, which is computed as follows:
+\begin{align*}
+I &= \frac{P}{A} \\
+&= \frac{P}{4\pi D^2} \\
+&= \frac{223.22}{4\pi (10\times 10^3)^2} \\
+&= 1.7763 \times 10^{-7}\text{ W m${}^{-2}$}
+\end{align*}
+
+From here, we know that the power in that specific location is given by $P = IA$. Assuming you eye is a circle, we can do the following:
+
+\begin{align*}
+P &= IA \\
+&= (I)(2\pi \rho^2) \\
+&= (1.7763 \times 10^{-7})(\pi \times (3\times10^{-3})^2) \\
+&= 5.0224 \times 10^{-12} \\
+&= \bf{5.02 \times 10^{-12}}\textbf{ W}\text{ (3 s.f.)}
+\end{align*}
+
+\textbf{Note:} This answer differs from that given from the answer key as I have use the vaue of $P$ as 223.22 W instead of 220 W. If the latter is used, this answer is instead $4.95 \times 10^{-12}$ W.
+\end{tcolorbox}
+\newpage
+\part At what wavelength does the filament radiate the most power?
+\begin{tcolorbox}
+\textbf{Solution:} \\
+Use Wien's Displacement Law here too.
+\begin{align*}
+\lambda_\text{peak} &= \frac{b}{T} \\
+&= \frac{2.898 \times 10^{-3}}{5000} \\
+&= 5.796 \times 10^{-7} \text{ m} \\
+&\approx \textbf{580 nm}\text{ (2 s.f.)}
+\end{align*}
+\end{tcolorbox}
+
+\part How many radiated photons enter your eye every second? You can assume for the average wavelength for the radiation is $\lambda = 600$ nm.
+\begin{tcolorbox}
+\textbf{Solution:} \\
+By Planck's Quantization of Energy, we have the following:
+\begin{align*}
+\frac{dE}{dt} &= P \\
+\frac{hc}{\lambda} \frac{dn}{dt} &= P \\
+\frac{dn}{dt} &= \frac{600 \times 10^{-9} \times 5.0224 \times 10^{-12}}{(6.626 \times 10^{-34}) (3.00 \times 10^8)} \\
+&= 1.5160 \times 10^8 \\
+&\approx \bf{1.52 \times 10^8}\textbf{ photons per second}\text{ (3 s.f.)}
+\end{align*}
+\end{tcolorbox}
+
+\end{parts}
+\newpage
+\question If we consider the Earth as a blackbody in thermal equilibrium,
+
+\begin{parts}
+\part estimate the global temperature of our planet in terms of the temperature of the Sun, $T_\text{sun}$, its radius $R_\text{sun}$, and distance $D$ between the Earth and Sun.
+\begin{tcolorbox}
+\textbf{Solution:} \\
+Note that this solution essentially posits that for there to be thermal equilibrium, the overall power radiated from the Earth into the eternal cosmos is effectively equivalent to the radiated received by the Earth from the Sun, such that there is thermostatic equilibrium. We are also assuming that there are no external factors that are causing heat to reach the Earth. Thus we have the following:
+\begin{align*}
+P_\text{rad, Earth} &= P_\text{SE} \\
+SA_\text{Earth} e\sigma T_\text{earth}^4 &= \frac{0.25 \times SA_\text{Earth}}{4\pi D^2} P_\text{Sun} \\
+\sigma T_\text{earth}^4 &= \frac{SA_\text{Sun} e\sigma T_\text{sun}^4}{16\pi D^2} \\
+T_\text{earth}^4 &= \frac{4\pi R_\text{sun}^2 T_\text{sun}^4}{16\pi D^2} \\
+T_\text{earth} &= T_\text{sun} \sqrt{\frac{R_\text{sun}}{2D}}
+\end{align*}
+
+\textbf{Note: }the area of the Earth from then Sun is the perpendicular area, which is in fact just $\pi R_\text{earth}^2$.
+\end{tcolorbox}
+
+\part compute this temperature using $T_\text{sun} = 5700$ K, $R_\text{sun} = 7 \times 10^5$ km, and $D = 150 \times 10^6$ km.
+\begin{tcolorbox}
+\textbf{Solution:} \\
+Well, we have the values, so we just plug it in.
+\begin{align*}
+T_\text{earth} &= T_\text{sun} \sqrt{\frac{R_\text{sun}}{D\sqrt{2}}} \\
+&= (5700) \sqrt{\frac{7 \times 10^5 \times 10^3}{2 \times 150 \times 10^6 \times 10^3}} \\
+&= 275.33616\text{ K} \\
+&\approx \textbf{275 K} = \textbf{2 \textdegree C}
+\end{align*}
+\end{tcolorbox}
+\end{parts}
+
+\end{questions}
+
+\end{document}

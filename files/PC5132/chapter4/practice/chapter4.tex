@@ -1,0 +1,171 @@
+\documentclass[a4paper, 12pt, addpoints]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\printanswers
+\title{Chapter 4 \textbf{Nuclear Reactions}}
+\author{Prannaya Gupta}
+\date{$5^{\text{th}}$ August 2022}
+\begin{document}
+
+\maketitle
+
+
+\begin{tcolorbox}
+Unless otherwise stated:
+\begin{align*}
+\text{Elementary Charge, }q_e &= 1.60 \times 10^{-19}\text{ C} \\
+\text{Speed of Light, }c &= 3.00 \times 10^8\text{ m/s} \\
+\text{Atomic Mass Unit, }u &= 1.66 \times 10^{-27}\text{ kg} \\
+\text{Proton Mass, }m_p &= 1.007276\text{ u} \\
+\text{Neutron Mass, }m_n &= 1.008665\text{ u} \\
+\text{Electron Mass, }m_e &= 0.000549\text{ u}
+\end{align*}
+\end{tcolorbox}
+
+\begin{questions}
+\question By how much does the mass of a heavy nucleus change as it emits a 4.8 MeV gamma ray photon?
+\begin{tcolorbox}
+\textbf{Solution:}
+\\ By the Mass-Energy Equivalence ($\Delta E = \Delta mc^2$), we have that the energy of the photon is equivalent to the change of energy of the the heavy nucleus (by the law of conservation of energy), thus we have the following:
+\begin{align*}
+\Delta E &= \Delta mc^2 \\
+4.8\text{ MeV} &= \Delta mc^2 \\
+4.8 \times 10^6 \times q_e &= \Delta m (c^2) \\
+\Delta m &= \frac{4.8 \times 10^6 \times 1.6 \times 10^{-19}}{(3.00\times 10^8)^2} \\
+&= 8.53333 \times 10^{-30} \text{ kg} \\
+&= 5.1406 \times 10^{-3} \text{ u} \\
+&\approx \bf{5.2 \times 10^{-3}} \text{ u}
+\end{align*}
+\end{tcolorbox}
+
+\question Find the binding energy of ${}^{107}_{46}\text{Ag}$, which has an atomic mass of 106.905 u. Express your answer to three significant figures.
+\begin{tcolorbox}
+\textbf{Solution: } \\
+This is simply the mass-energy equivalence, again.
+\begin{align*}
+B.E. &= \Delta mc^2 \\
+&= (46m_p + (107-46)m_n + 46m_e - m_{\text{Ag}}) c^2 \\
+&= (46\times1.007276 + 61\times 1.008665 + 46 \times 0.000549 - 106.905)\text{ u }\times c^2 \\ 
+&= 0.9826 \times 1.66 \times 10^{-27} \times (3.00\times 10^8)^2 \\
+&= 1.4680044 \times 10^{-10}\text{ J}\\
+&= 917.50275\text{ MeV} \\
+&\approx \textbf{918 MeV}
+\end{align*}
+\end{tcolorbox}
+
+\question The binding energy per nucleon for elements near iron in the periodic table is about 8.90 MeV per nucleon. Estimate the atomic mass (including electrons) of ${}^{56}_{26}\text{Fe}$.
+\begin{tcolorbox}
+\textbf{Solution: } \\
+Since $A = 56$ nucleons, we can get the total binding energy to be as follows:
+\begin{align*}
+B.E. &= 56 \times 8.90\text{ MeV} \\
+\Delta mc^2 &= 498.4 \times 10^6 \times 1.60 \times 10^{-19} \text{ J} \\
+(26 \times m_p + 26 \times m_e + 30 \times m_n - m_{\text{Fe}}) &= \frac{7.9744 \times 10^{-11}}{c^2} \\
+m_\text{Fe} = (26 \times 1.007276 + 26 \times 0.000549 &+ 30 \times 1.008665)\text{ u} - \frac{7.9744 \times 10^{-11}}{c^2}\\
+m_\text{Fe} = (56.4634)- &\frac{7.9744 \times 10^{-11}}{(3.00\times 10^8)^2\times 1.66 \times 10^{-27}} \\
+= 55.92964\text{ u} & \approx \textbf{55.9 u}
+\end{align*}
+\end{tcolorbox}
+
+\question Consider the following fission reaction:
+$${}^1_0 \text{n} + {}^{235}_\text{ 92} \text{U} \xrightarrow{} {}^{138}_\text{ 56} \text{Ba} + {}^{93}_\text{41} \text{Nb} + 
+ \text{5 } {}^{1}_0 \text{n} + \text{5 } {}^\text{ 0}_\text{-1} \text{e}$$
+
+The masses of one unit of each component (in terms of u) are given. How much energy is released when:
+\begin{parts}
+\part 1 atom undergoes this type of fission?
+\begin{tcolorbox}
+\textbf{Solution: } \\
+By Mass-Energy Equivalence,
+\begin{align*}
+E_{released} =& \Delta m c^2 \\
+=&\text{ } (1.0087 + 235.0439 - 137.9050 - 92.9060 - 5 \\&\text{ }   \times 1.0087 - 5 \times 0.00055) \text{ u} \times c^2 \\
+=&\text{ }  0.19535 \times 1.66 \times 10^{-27} \times (3.00 \times 10^8)^2 \\
+=&\text{ } 2.918529 \times 10^{-11}\text{ J} \\
+=&\text{ } 182.40806\text{ MeV} \\
+\approx&\textbf{ 182 MeV} 
+\end{align*}
+\end{tcolorbox}
+
+\part 1.0 kg of atoms undergoes fission?
+\begin{tcolorbox}
+\textbf{Solution: } \\
+1.0 kg of Uranium atoms of mass $235.0439\text{ u}$ gives the following number of atoms:
+\begin{align*}
+n_{\text{atoms}} &= \frac{1.0}{235.0439 \times 1.66 \times 10^{-27}} \\
+&= 2.5630 \times 10^{24}\text{ atoms}
+\end{align*}
+
+
+By Mass-Energy Equivalence,
+\begin{align*}
+E_{\text{released}} &= n_{\text{atoms}} E_{\text{atom}} \\
+&= 2.5630 \times 10^{24} \times 2.918529 \times 10^{-11} \\
+&= 7.48019 \times 10^{13} \text{ J} \\
+&\approx \bf{7.5 \times 10^{13}}\textbf{ J}
+\end{align*}
+\end{tcolorbox}
+\end{parts}
+
+\question See notes for question, see other page for my answer on the whiteboard.
+
+\question One of the most promising fusion reactions for power generation involves deuterium (H-2) and tritium (H-3):
+$${}^2_1\text{H} + {}^3_1\text{H} \xrightarrow{} {}^4_2\text{He} + {}^1_0\text{n}$$
+where the atomic masses (including electrons) are as given. How much energy is produced when 2.0 kg of H-2 fuses with 3.0 kg of H-3 to form He-4?
+\begin{tcolorbox}
+\textbf{Solution:}\\
+Let's start by getting the amount of energy released in one such reaction (which is also given by the Mass-Energy Equivalence).
+\begin{align*}
+E_\text{reaction} &= \Delta mc^2 \\
+&= (2.01410 + 3.01605 - 4.00260 - 1.00867)\text{ u} \times c^2 \\
+&= 0.01888 \times 1.66 \times 10^{-27} \times (3.00\times 10^8)^2 \\
+&= 2.82067 \times 10^{-12}\text{ J}.
+\end{align*}
+
+Now we need to find the limiting reagent. To do this, we compute the number of atoms of H-2 and H-3 separately.
+\begin{align*}
+n_\text{H-2} &= \frac{2.0}{2.01410 \times 1.66 \times 10^{-27}} \\
+&= 5.98192 \times 10^{26}\text{ atoms} \\
+n_\text{H-3} &= \frac{3.0}{3.01605 \times 1.66 \times 10^{-27}} \\
+&= 5.99204 \times 10^{26}\text{ atoms}
+\end{align*}
+
+Thus, deuterium is in the minority, hence we have that $n_\text{reactions} = n_\text{H-2}$. From here, we can extrapolate the energy released overall, as follows:
+
+\begin{align*}
+E_\text{released} &= n_\text{reactions} E_\text{reaction} \\
+&= 5.98192 \times 10^{26} \times 2.82067\times 10^{-12} \\
+&= 1.68730 \times 10^{15}\text{ J} \\
+&\approx \bf{1.7 \times 10^{15}}\textbf{ J}
+\end{align*}
+\end{tcolorbox}
+
+\question In a fusion reaction, two deuterons (${}^2_1\text{H}$, atomic mass = 2.01410 u) fuse to form ${}^3_2\text{He}$ (atomic mass = 3.01603 u) with the release of a neutron.
+\begin{parts}
+\part Write the equation for this reaction.
+\begin{tcolorbox}
+\textbf{Solution:}
+$$\text{2 }{}^2_1\text{H} \xrightarrow{} {}^3_2\text{He} + {}^1_0\text{n}$$
+\end{tcolorbox}
+
+\part Find the energy released in this fusion reaction. Express your answer to three significant figures.
+\begin{tcolorbox}
+For the umpteenth time, by Mass-Energy Equivalence, we have the following:
+\begin{align*}
+E_\text{released} &= \Delta mc^2 \\
+&= (2\times 2.0141-3.01603-1.008665)\text{ u} \times c^2 \\
+&= 0.0035050 \times 1.66 \times 10^{-27} \times (3.00\times 10^8)^2 \\
+&= 5.23647 \times 10^{-13} \text{ J} \\
+&= 3.2728\text{ MeV} \\
+&\approx \textbf{3.27 MeV}
+\end{align*}
+\end{tcolorbox}
+\end{parts}
+\end{questions}
+
+
+
+\end{document}
