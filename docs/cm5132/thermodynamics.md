@@ -50,3 +50,16 @@ $$
 As you can see, it's basically the same thing.
 
 ### Gibbs Free Energy under Non-Standard State Conditions, $\Delta G$
+
+Under Non-Standard State Conditions, we have to adjust the Gibbs Free Energy to match said conditions. This is done by the following expression:
+
+$$\Delta G = \Delta G^\circ{} + RT \ln Q$$
+
+Where Q is the reaction quotient. For aqueous conditions, this is $Q_c$ (i.e. concentration is in focus), while in gaseous conditions, this is $Q_p$ (i.e. pressure is in focus).
+
+One thing of note is that at equilibrium, $\Delta G$ is equivalent to 0. Thus, we have the following expression:
+
+$$\Delta G^\circ{} = - RT \ln K$$
+
+This can be used to compute standard state Gibbs Free Energy or the Equilibrium Constant.
+
