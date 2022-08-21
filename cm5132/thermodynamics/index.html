@@ -512,20 +512,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../CM5132/gibbs_free_energy.md" class="md-nav__link">
-        None
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -552,6 +538,75 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#entropy-s" class="md-nav__link">
+    Entropy, \(S\)
+  </a>
+  
+    <nav class="md-nav" aria-label="Entropy, \(S\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entropy-change-of-system-delta-s_textsys" class="md-nav__link">
+    Entropy Change of System, \(\Delta S_\text{sys}\)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entropy-change-of-surroundings-delta-s_textsurr" class="md-nav__link">
+    Entropy Change of Surroundings, \(\Delta S_\text{surr}\)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entropy-of-universe-delta-s_textuniv" class="md-nav__link">
+    Entropy of Universe, \(\Delta S_\text{univ}\)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gibbs-free-energy-g" class="md-nav__link">
+    Gibbs Free Energy, \(G\)
+  </a>
+  
+    <nav class="md-nav" aria-label="Gibbs Free Energy, \(G\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gibbs-free-energy-at-standard-state-conditions-delta-gcirc" class="md-nav__link">
+    Gibbs Free Energy at Standard State Conditions, \(\Delta G^\circ\)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gibbs-free-energy-under-non-standard-state-conditions-delta-g" class="md-nav__link">
+    Gibbs Free Energy under Non-Standard State Conditions, \(\Delta G\)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -565,6 +620,62 @@
 
 
 <h1 id="chemical-thermodynamics">Chemical Thermodynamics</h1>
+<h2 id="entropy-s">Entropy, <span class="arithmatex">\(S\)</span></h2>
+<p>Entropy is a measure of <strong>disorderliness</strong>. At absolute zero, the value for entropy is zero. It increases:
+- change in states (gas is highest)
+- increase in <span class="arithmatex">\(V\)</span> or <span class="arithmatex">\(T\)</span>
+- increase in molecular complexity</p>
+<h3 id="entropy-change-of-system-delta-s_textsys">Entropy Change of System, <span class="arithmatex">\(\Delta S_\text{sys}\)</span></h3>
+<p>Also a state function, and operates similarly as with enthalpy change.</p>
+<div class="arithmatex">\[\Delta S_\text{sys} = \sum n_\text{product} S_\text{ product} - \sum n_\text{ reactant} S_\text{reactant}\]</div>
+<h3 id="entropy-change-of-surroundings-delta-s_textsurr">Entropy Change of Surroundings, <span class="arithmatex">\(\Delta S_\text{surr}\)</span></h3>
+<p>Change in entropy in the surrounding, which is essentially just the following:
+<span class="arithmatex">\(<span class="arithmatex">\(\Delta S_\text{surr} = \frac{-\Delta H_\text{sys}}{T}\)</span>\)</span></p>
+<h3 id="entropy-of-universe-delta-s_textuniv">Entropy of Universe, <span class="arithmatex">\(\Delta S_\text{univ}\)</span></h3>
+<p>Combined entropy of system and surrounding, the entropy of the universe is supposed to be positive for any spontaneous process, that is to say that the entropy of the universe increaes as time goes by. (<strong>Second Law of Thermodynamics</strong>)</p>
+<div class="arithmatex">\[
+\begin{align*}
+\Delta S_\text{univ} &amp;= \Delta S_\text{sys}+\Delta S_\text{surr} \\ 
+&amp;= \Delta S_\text{sys}-\frac{\Delta H_\text{sys}}{T}
+\end{align*}
+\]</div>
+<h2 id="gibbs-free-energy-g">Gibbs Free Energy, <span class="arithmatex">\(G\)</span></h2>
+<p>Basically just the Entropy of the Universe, but with a fancier name.</p>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th><span class="arithmatex">\(\Delta S_\text{univ}\)</span></th>
+<th><span class="arithmatex">\(\Delta G\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spontaneous</td>
+<td><span class="arithmatex">\(+\)</span></td>
+<td><span class="arithmatex">\(-\)</span></td>
+</tr>
+<tr>
+<td>Equilibrium</td>
+<td><span class="arithmatex">\(0\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+</tr>
+<tr>
+<td>Spontaneous in Reverse Direction</td>
+<td><span class="arithmatex">\(-\)</span></td>
+<td><span class="arithmatex">\(+\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="gibbs-free-energy-at-standard-state-conditions-delta-gcirc">Gibbs Free Energy at Standard State Conditions, <span class="arithmatex">\(\Delta G^\circ\)</span></h3>
+<div class="arithmatex">\[
+\begin{align*}
+\Delta G^\circ &amp;= -T\Delta S^\circ_\text{univ} \\
+&amp;= \Delta H^\circ_\text{sys} - T\Delta S^\circ_\text{sys}
+\end{align*}
+\]</div>
+<p>As you can see, it's basically the same thing.</p>
+<h3 id="gibbs-free-energy-under-non-standard-state-conditions-delta-g">Gibbs Free Energy under Non-Standard State Conditions, <span class="arithmatex">\(\Delta G\)</span></h3>
 
               
             </article>
