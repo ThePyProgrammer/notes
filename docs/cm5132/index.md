@@ -3,6 +3,6 @@
 ## Notes
 Currently completed:
 
-- [ ] [Chemical Energetics](./energetics)
-- [ ] Chemical Thermodynamics
-- [ ] Gibbs Free Energy
+- [X] [Chemical Energetics](./energetics)
+- [ ] [Chemical Thermodynamics](./thermodynamics)
+- [ ] [Gibbs Free Energy](./gibbs_free_energy)

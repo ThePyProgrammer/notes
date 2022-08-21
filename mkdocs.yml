@@ -75,12 +75,14 @@ nav:
       - Rotational Mechanics: pc5131/rotation.md
       - Waves I: pc5131/waves-one.md
   - PC5132:
-      - Checklist: pc5132/index.md
-      - Chapter 4 Practice Qns: pc5132/chapter4.pdf
-      - Chapter 5 Practice Qns: pc5132/chapter5.pdf
+      - Checklist: PC5132/index.md
+      - Chapter 4 Practice Qns: PC5132/chapter4.pdf
+      - Chapter 5 Practice Qns: PC5132/chapter5.pdf
   - CM5132:
-      - Home: cm5132/index.md
-      - cm5132/energetics.md
+      - Home: CM5132/index.md
+      - CM5132/energetics.md
+      - CM5132/thermodynamics.md
+      - CM5132/gibbs_free_energy.md
 
 
 extra:
