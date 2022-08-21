@@ -2,7 +2,7 @@
 
 
 ## Summary (for those in a hurry)
-- $U = q - w = n \Delta H - p \Delta V = -(mc+C)\Delta T-p\Delta V$
+- $U = q_\text{in system} - w_\text{by system} = n \Delta H - p \Delta V = -(mc+C)\Delta T-p\Delta V$
 - Standard State ($H^{\circ}$) is 1M for aqueous, 1 atm for gaseous and pure otherwise
 
 |Name|Symbol|Definition|
