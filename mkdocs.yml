@@ -82,7 +82,6 @@ nav:
       - Home: CM5132/index.md
       - CM5132/energetics.md
       - CM5132/thermodynamics.md
-      - CM5132/gibbs_free_energy.md
 
 
 extra:
