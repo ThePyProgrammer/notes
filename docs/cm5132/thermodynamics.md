@@ -13,6 +13,7 @@ $$\Delta S_\text{sys} = \sum n_\text{product} S_\text{ product} - \sum n_\text{ 
 
 ### Entropy Change of Surroundings, $\Delta S_\text{surr}$
 Change in entropy in the surrounding, which is essentially just the following:
+
 $$\Delta S_\text{surr} = \frac{-\Delta H_\text{sys}}{T}$$
 
 ### Entropy of Universe, $\Delta S_\text{univ}$
