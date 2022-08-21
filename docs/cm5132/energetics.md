@@ -112,4 +112,10 @@ This is technically a side-tour. Bond Energy is the energy required to overcome 
 
 $$\text{Cl}-\text{Cl} \rightarrow 2\text{ Cl}\quad \quad BE_{\text{Cl}-\text{Cl}}$$
 
-This is similar to the formation enthalpy (of course it's the reverse reaction), 
+This is similar to the formation enthalpy (of course it's the reverse reaction), and it's only for one bond. But we can also use this meaningfully!
+### Using $\Delta H_a$ meaningfully
+Same thing as with $\Delta H_a$ honestly.
+
+$$\Delta H_{rxn} = \sum BE_\text{bonds broken} - \sum BE_\text{bonds formed}$$
+
+
