@@ -74,16 +74,27 @@
 
 \maketitle
 
-\begin{circuitikz} \draw
-    (0,0) node[transformer] (T) {}
-    (T.A1) node[anchor=east] {A1}
-    (T.A2) node[anchor=east] {A2}
-    (T.B1) node[anchor=west] {B1}
-    (T.B2) node[anchor=west] {B2}
-    (T.base) node{K}
-    (T.inner dot A1) node[circ]{}
-    (T.inner dot B2) node[circ]{};
-   \end{circuitikz}
+\chapter{}
+
+My last two digits are "67", thus as per the given formula, by Parameter Set Number is \textbf{18}. Running the simulator, we get the following table:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+         \hline Motor Voltage $V_m$ (V) & Rotational Speed N (RPM)  \\
+         \hline 7 & 691 \\
+         8 & 1043 \\
+         9 & 1354 \\
+         10 & 1666 \\
+         11 & 1981 \\
+         12 & 2450 \\
+         \hline
+    \end{tabular}
+    \caption{Simulated Readings}
+    \label{tab:activity1}
+\end{table}
+
+
 
 
 \end{document}
