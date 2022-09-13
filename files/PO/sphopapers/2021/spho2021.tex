@@ -1,0 +1,41 @@
+\documentclass[a4paper, 12pt, addpoints]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{wasysym}
+\printanswers
+\title{Singapore Physics Olympiad \textbf{2022}}
+\author{Prannaya Gupta}
+\date{$22^{\text{nd}}$ August 2022}
+\begin{document}
+
+\maketitle
+
+
+\begin{tcolorbox}
+\textbf{Solution:}\\
+We know that for a standing wave, $L = n\frac{\lambda}{2}$. We can derive an expression by the velocity function of a string wave.
+\begin{align*}
+v &= \sqrt{\frac{T}{\mu}} \\
+\frac{\lambda}2 &= \frac{1}{2f}\sqrt{\frac{T}{\mu}} = \frac{1}{2f} \sqrt{\frac{mg}{\mu}} \\
+n &= 2fL \sqrt{\frac{\mu}{mg}} \\
+\mu &= mg \left(\frac{n}{2fL} \right)^2
+\end{align*}
+
+From this expression, we know that mass is inversely proportional to $n^2$. Hence, we have the following:
+\begin{align*}
+\frac{n_1}{n_2} &= \sqrt{\frac{447.0}{286.1}} = 1.24996 \approx \frac{5}{4}
+\end{align*}
+
+Thus we have the values for $n_1$ and $n_2$ (which are both supposed to be integers). Thus,
+\begin{align*}
+\mu &= m_1 g \left(\frac{n_1}{2fL} \right)^2 \\
+&= 286.1 \times 9.81 \times \left(\frac{5}{2\times 120 \times 1.20} \right)^2 \\
+&= \textbf{0.84594} 
+\end{align*}
+\end{tcolorbox}
+
+
+\end{document}

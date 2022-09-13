@@ -32,11 +32,11 @@ $$
 
 Basically just the Entropy of the Universe, but with a fancier name.
 
-|Situation|$\Delta S_\text{univ}$|$\Delta G$|
-|---|---|---|
-|Spontaneous|$+$|$-$|
-|Equilibrium|$0$|$0$|
-|Spontaneous in Reverse Direction|$-$|$+$|
+|Situation|Entropy of Universe, $\Delta S_\text{univ}$|Gibbs Free Energy, $\Delta G$|Reaction Quotient, $Q$|
+|---|---|---|---|
+|Spontaneous|$+$|$-$|$Q<K$|
+|Equilibrium|$0$|$0$|$Q=K$|
+|Spontaneous in Reverse Direction|$-$|$+$|$Q > K$|
 
 ### Gibbs Free Energy at Standard State Conditions, $\Delta G^\circ$
 
@@ -57,9 +57,11 @@ $$\Delta G = \Delta G^\circ{} + RT \ln Q$$
 
 Where Q is the reaction quotient. For aqueous conditions, this is $Q_c$ (i.e. concentration is in focus), while in gaseous conditions, this is $Q_p$ (i.e. pressure is in focus).
 
-One thing of note is that at equilibrium, $\Delta G$ is equivalent to 0. Thus, we have the following expression:
+One thing of note is that at equilibrium, $\Delta G$ is equivalent to 0 (no driving force for a net reaction). Thus, we have the following expression:
 
 $$\Delta G^\circ{} = - RT \ln K$$
 
 This can be used to compute standard state Gibbs Free Energy or the Equilibrium Constant.
 
+
+## Gibbs Free Energy Curve

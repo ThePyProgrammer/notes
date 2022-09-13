@@ -1,5 +1,10 @@
 [
   "better-word-count",
   "file-explorer-note-count",
-  "txt-as-md-obsidian"
+  "txt-as-md-obsidian",
+  "obsidian-admonition",
+  "open-vscode",
+  "obsidian-custom-frames",
+  "notion-like-tables",
+  "obsidian-discordrpc"
 ]

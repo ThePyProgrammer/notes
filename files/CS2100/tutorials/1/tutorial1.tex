@@ -1,0 +1,32 @@
+\documentclass[a4paper, 12pt, addpoints]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{wasysym}
+\printanswers
+\title{CS2100 \textbf{Tutorial 1}}
+\author{Prannaya Gupta}
+\date{$24^{\text{th}}$ August 2022}
+\begin{document}
+
+\maketitle
+
+
+\section{Discussion Questions}
+\begin{questions}
+\question In 2’s complement representation, “sign extension” is used when we want to represent an $n$-bit signed integer as an $m$-bit signed integer, where $m > n$. We do this by copying the sign-bit of the $n$-bit signed $m – n$ times to the left of the $n$-bit number to create an $m$-bit number. So for example, we want to sign-extend \texttt{0b0110} to an 8-bit number. Here $n = 4$, $m = 8$, and thus we copy the sign but $m – n = 4$ times, giving us \texttt{0b00000110}. Similarly if we want to sign-extend \texttt{0b1010} to an 8-bit number, we would get \texttt{0b11111010}. Show that IN GENERAL sign extension is value-preserving. For example, \texttt{0b00000110 = 0b0110} and \texttt{0b11111010 = 0b1010}.
+
+\end{questions}
+\newpage
+
+\section{Practice Questions}
+
+\begin{questions}
+\question 
+
+\end{questions}
+
+
+\end{document}

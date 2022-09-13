@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "461456df2e844b4c",
+        "id": "e6dcda074cc959db",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/pc5131/index.md",
+            "file": "files/CS2100/tutorials/Tutorial 4.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/pc5131/index.md",
+                "file": "files/CS2100/tutorials/Tutorial 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,13 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "461456df2e844b4c",
+  "active": "e6dcda074cc959db",
   "lastOpenFiles": [
-    "docs/pc5131/index.md",
-    "docs/pc5131/waves-one.md",
-    "docs/pc5131/rotation.md",
-    "README.md",
-    "docs/index.md",
-    "docs/Getting Started.md"
+    "docs/PC5132/chapter6.md",
+    "files/PO/sphopapers/2021/2.md.md",
+    "files/PO/sphopapers/2021/1.md.md",
+    "files/PO/sphopapers/2021/spho2021.pdf",
+    "files/PC5132/chapter6/practice/chapter6.pdf",
+    "files/CS5132/PA1/report/report.pdf",
+    "requirements.txt",
+    "docs/PC5132/index.md",
+    "docs/PC5132/chapter4.pdf",
+    "docs/pc5131/rotation.md"
   ]
 }
