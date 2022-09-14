@@ -94,7 +94,36 @@ My last two digits are "67", thus as per the given formula, by Parameter Set Num
     \label{tab:activity1}
 \end{table}
 
+For this studio, we note that $\omega = \frac{2\pi}{60}N$, thus the equation $\omega = \frac{V_m}{K_e} - \frac{R_mI_m}{K_e}$ is really just a linear line. Therefore, we use the linear trendline.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/activity1graph.png}
+    \caption{Graph of Rotational Speed, $N$ (RPM) against Motor Voltage, $V_m$}
+    \label{fig:activity1graph}
+\end{figure}
 
+From here, we get that the equation of the curve is:
+$$N = 340.6V_m - 1704.9$$
+
+The motor does not start turning immediately after the voltage is applied is because 
+
+\chapter{DC Motor Characterization}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+         \hline Torque Load & Motor Current $I_m$ (A) & Rotational Speed N (RPM) & $\omega$ (rad/s)  \\
+         \hline $\sim$2/3 of slider & 0.769 & 861 & 90.16 \\
+         $\sim$1/2 of slider & 0.581 & 1530 & 160.22 \\
+         $\sim$1/3 of slider & 0.410 & 2450 & 256.56 \\
+         $\sim$1/6 of slider & 0.204 & 3212 & 336.36 \\
+         $\sim$1/10 of slider & 0.128 & 3444 & 360.65 \\
+         \hline
+    \end{tabular}
+    \caption{Simulated Readings}
+    \label{tab:activity2}
+\end{table}
+
+The following represents
 
 \end{document}
