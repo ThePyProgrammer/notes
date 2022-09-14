@@ -27,8 +27,94 @@ Unless otherwise stated:
 \newpage
 \section{Discussion Questions}
 \begin{questions}
-\question The average threshold of dark-adapted (scotopic) vision is $4.00 \times 10^{-11}\text{ W m}^{-2}$$ at a central wavelength of 500 nm. If light 
+\question The average threshold of dark-adapted (scotopic) vision is $4.00 \times 10^{-11}\text{ W m}^{-2}$ at a central wavelength of 500 nm. If light with this intensity and wavelength enters the eye and the pupil is open to a diameter of 7.0 mm, how many photons enter the eye per second?
 
+\begin{tcolorbox}
+\textbf{Solution: }
+\begin{align*}
+    I &= \frac{Nhf}{tA} \\
+    \frac{N}{t} &= \frac{I(\pi \times d^2)\lambda}{4hc} \\
+    &= \frac{4.00 \times 10^{-11} \times \pi \times (7.0 \times 10^{-3})^2 \times 500 \times 10^{-9}}{4 \times 6.626 \times 10^{-34} \times 3.0 \times 10^8} \\
+    &= 3872\text{ photons} \\
+    &\approx \textbf{3800 photons}\text{ (2 s.f.)}
+\end{align*}
+\end{tcolorbox}
+
+\question In an experiment, EM radiation of wavelength 480 nm and with an intensity of 100 W m${}^{-2}$ was incident on a potassium surface. When an area of 12 mm${}^2$ was illuminated, a photocurrent of $4.5\times 10^{-10}$ A was measured.
+
+\begin{parts}
+\part Calculate the rate of incidence of photons on the metal surface.
+\begin{tcolorbox}
+\textbf{Solution: }
+\begin{align*}
+I &= \frac{Nhf}{tA} \\
+\frac{N}{t} &= \frac{IA\lambda}{hc} \\
+&= \frac{100 \times 12 \times 10^{-6} \times 480 \times 10^{-9}}{6.626\times 10^{-34} \times 3.0 \times 10^8} \\
+&= 2.89768 \times 10^{15} \text{ photons per second} \\
+&\approx \bf{2.9 \times 10^{15}}\textbf{ photons per second}\text{ (2 s.f.)}
+\end{align*}
+\end{tcolorbox}
+
+\part Calculate the rate of emission of electrons.
+\begin{tcolorbox}
+\textbf{Solution: }
+\begin{align*}
+    I &= \frac{Q}{t} \\
+    &= \frac{Nq_e}{t} \\
+    \frac{N}{t} &= \frac{I}{q_e} \\
+    &= \frac{4.5\times 10^{-10}}{1.60 \times 10^{-19}} \\
+    &= 2.8125 \times 10^{9} \text{ electrons per second} \\
+    &\approx \bf{2.8 \times 10^{9}}\textbf{ electrons per second}\text{ (2 s.f.)}
+\end{align*}
+\end{tcolorbox}
+\end{parts}
+
+\question A student claims that she is going to eject electrons from a piece of metal by placing a radio transmitter antenna adjacent to the metal and sending a string FM radio signal into the antenna. The work function of a metal is typically a few electron volts. Will this work?
+
+\begin{tcolorbox}
+\textbf{Solution: }Very likely not.
+
+The energy of a radio wave is really very small, and it likely can't surpass a few electron volts.
+\end{tcolorbox}
+
+\question A student studying the photoelectric effect from two different metals records the following information when they are illuminated by the same source:
+
+\begin{enumerate}
+\item the stopping potential for photoelectrons released from metal 1 is 1.41 V larger than that for metal 2 and
+\item the threshold frequency for metal 1 is 60.0\% that f metal 2.
+\end{enumerate}
+
+Determine the work function for each metal.
+
+\begin{tcolorbox}
+\textbf{Solution: }\\
+We have the following simultaneous expressions:
+\begin{align*}
+    E_1 &= hf_{o, 1} + q_eV_{s, 1} \\
+    E_2 &= hf_{o, 2} + q_eV_{s, 2} \\
+    0.6 hf_{o, 2} + q_e(V_{s, 2} + 1.41) &= hf_{o, 2} + q_e (V_{s,2}) \\
+    q_e (1.41) &= 0.4 \phi_2 \\
+    \phi_2 &= \frac{1.6\times 10^{-19} \times 1.41}{0.4} \\
+    \phi_2 &= 3.525\text{ eV} \\
+    &\approx \textbf{3.5 eV} \\
+    \phi_1 &= 0.6 \phi_2 \\
+    &= 2.115\text{ eV} \\
+    &\approx \textbf{2.1 eV}
+\end{align*}
+
+\end{tcolorbox}
+
+
+\question The \textbf{threshold wavelength} of mercury is 276 nm.
+\begin{parts}
+\part Define \textit{threshold wavelength}.
+\begin{tcolorbox}
+The threshold wavelength is the maximum wavelength of an EM radiation required for 
+\end{tcolorbox}
+\end{parts}
+
+
+\question A very weak beam
 \end{questions}
 \newpage
 

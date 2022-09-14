@@ -1,0 +1,140 @@
+% This is based on the LLNCS.DEM the demonstration file of
+% the LaTeX macro package from Springer-Verlag
+% for Lecture Notes in Computer Science,
+% version 2.4 for LaTeX2e as of 16. April 2010
+%
+% See http://www.springer.com/computer/lncs/lncs+authors?SGWID=0-40209-0-0-0
+% for the full guidelines.
+%
+\RequirePackage{fix-cm}
+\documentclass[smallextended]{svjour3}
+\smartqed
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc} 
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{graphicx} 
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{natbib}
+%\usepackage{breakcites}
+%\usepackage{cite}
+%\usepackage[colorlinks=true, allcolors=blue, breaklinks]{hyperref}
+\usetikzlibrary{quotes,arrows.meta,positioning,decorations.pathreplacing,calc,3d,arrows}
+\usepackage{subfig}
+\usepackage[misc]{ifsym}
+
+%%% clean
+\usepackage[keeplastbox]{flushend}
+\usepackage[a4paper=false,
+            citecolor=blue,
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=blue,
+            pdfauthor={Author1},
+            pdftitle={Title},
+            pdfsubject={Title},
+            pdfkeywords={deep learning, time series, classification}
+            ]{hyperref}
+\usepackage{textcomp}
+\usepackage{tikz}
+\newcommand\copyrighttext{%
+\small This is the author's version of an article published in ....
+The final authenticated version is available online at: \url{...}.}
+\newcommand\copyrightnotice{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north,yshift=-30pt] at (current page.north) {\fbox{\parbox{\textwidth}{\copyrighttext}}};
+\end{tikzpicture}
+}
+
+\usepackage[11pt]{extsizes}
+
+\usepackage{geometry}
+\geometry{
+    paperheight = 11in,
+    paperwidth  = 8.5in,
+    left   = 1.0in,
+    right  = 1.0in,
+    top    = 1.0in,
+    bottom = 1.0in
+}
+
+\newcommand{\subparagraph}{}
+\usepackage{titlesec}
+\titleformat*{\section}{\sffamily\Large\bfseries}
+\titleformat*{\subsection}{\sffamily\large\bfseries}
+\titleformat*{\subsubsection}{\sffamily\large\bfseries}
+%\titlespacing{\section}{5pt}{5pt}{5pt}
+%\titlespacing{\subsubsection}{5pt}{5pt}{5pt}
+
+\usepackage{enumitem}
+\usepackage{setspace}
+\setlist{itemsep=0pt,parsep=0pt}
+%%% clean
+
+\begin{document}
+
+\hyphenation{avai-lability}
+
+\def\makeheadbox{\relax}
+
+
+\title{{\sffamily Title}}
+
+\titlerunning{Deep Title}  
+
+\author{\sffamily \large 
+        P1\textsuperscript{1} \and
+        P2\textsuperscript{1} \and 
+        P3\textsuperscript{1,2} \and 
+        P4\textsuperscript{2} \and 
+        P5\textsuperscript{2}
+}
+
+\authorrunning{Ricardo et al.} 
+
+\institute{\Letter{} A. BCD  \\ \medskip
+              \email{hello@example.com}  \\
+              \textsuperscript{1}dept1   \\
+              \textsuperscript{2}dept2
+}
+
+\date{}
+
+\maketitle           
+
+% \copyrightnotice{}   
+
+\vspace{-2cm}
+\begin{abstract}
+insert abstract here   
+\keywords{kw1 \and kw2 \and kw3}
+\end{abstract}
+
+\section{Introduction}
+
+
+\section{Background}\label{sec-background}
+\section{Methodology}\label{sec-methodology}
+\section{Results}\label{sec-results}
+\section{Discussions and Conclusions}\label{sec-conclusion}
+
+\section{Future Work}\label{sec-future}
+
+\begin{acknowledgements}
+insert acknowledgement here
+\end{acknowledgements}
+
+\newpage
+% BibTeX users please use one of
+% \bibliographystyle{spbasic}      % basic style, author-year citations
+% \bibliographystyle{spmpsci}      % mathematics and physical sciences
+\bibliographystyle{spphys}       % APS-like style for physics
+\bibliography{bib}
+
+\end{document}
