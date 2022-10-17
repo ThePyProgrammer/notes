@@ -2,6 +2,7 @@ This is a combination of points from S&T **and** 4IR.
 
 ## General Quotes
 - *"There has never been a time of greater promise, or one of greater peril."* ~ Professor Klaus Schwab, Founder and Executive Chairman of the World Economic Forum
+- As the titular character of the 2021 movie, _Finch_, said to his fellow robot atop the Golden Gate Bridge, "_It’s not until you actually stand on it, and see the beauty, and listen to the suspension cables singing in the winds, that’s experience. That’s human experience. It’s not just imagining, it’s living._" ~ Finch (2021 Movie)
 
 ## Ethics
 - Huge pressure placed on Scientists by Research Institutes
