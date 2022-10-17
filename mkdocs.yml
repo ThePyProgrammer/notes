@@ -71,8 +71,7 @@ extra_javascript:
 nav:
   - Home: index.md
   - EL5131:
-      - Science and Technology: EL5131/'Science and Technology'.md
-
+      - Science and Technology: EL5131/'Science and Technology.md'
   - PC5131:
       - Checklist: pc5131/index.md
       - Rotational Mechanics: pc5131/rotation.md
