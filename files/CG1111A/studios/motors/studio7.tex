@@ -25,9 +25,60 @@
     pdfpagemode=FullScreen,
     }
 
+\input{arduinoLanguage.tex}
+
 \urlstyle{same}
 \usepackage{xcolor}
 \usepackage{colortbl}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\colorlet{mygray}{black!30}
+\colorlet{mygreen}{green!60!blue}
+\colorlet{mymauve}{red!60!blue}
+\newcommand\inostyle{\lstset{
+  backgroundcolor=\color{gray!10},  
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  breakatwhitespace=false,      
+  breaklines=true,                
+  captionpos=b,                    
+  commentstyle=\color{mygreen}, 
+  extendedchars=true,              
+  frame=single,                   
+  keepspaces=true,
+  keywordstyle=\color{blue},      
+  language=Arduino,                 
+  numbers=none,                
+  numbersep=5pt,                   
+  numberstyle=\tiny\color{blue}, 
+  rulecolor=\color{mygray},        
+  showspaces=false,               
+  showtabs=false,                 
+  stepnumber=5,                  
+  stringstyle=\color{mymauve},    
+  tabsize=3,                      
+  title=\lstname                
+}}
+
+% INO environment
+\lstnewenvironment{ino}[1][]
+{
+\inostyle
+\lstset{#1}
+}
+{}
+
+
+% Ino for external files
+\newcommand\inoexternal[2][]{{
+\inostyle
+\lstinputlisting[#1]{#2}}}
+
+% Ino for inline
+\newcommand\inoinline[1]{{\inostyle\lstinline!#1!}}
+
+\usepackage{minted}
 
 \usepackage{graphicx, multicol, latexsym}
 \usepackage{blindtext}
@@ -74,9 +125,9 @@
 
 \maketitle
 
-\chapter{}
+\chapter{Simulation}
 
-My last two digits are "67", thus as per the given formula, by Parameter Set Number is \textbf{18}. Running the simulator, we get the following table:
+My last two digits are "67", thus as per the given formula, by Parameter Set Number is \textbf{18}.
 
 \begin{table}[H]
     \centering
@@ -106,7 +157,7 @@ For this studio, we note that $\omega = \frac{2\pi}{60}N$, thus the equation $\o
 From here, we get that the equation of the curve is:
 $$N = 340.6V_m - 1704.9$$
 
-The motor does not start turning immediately after the voltage is applied is because 
+The motor does not start turning immediately after the voltage is applied because it has to overcome the static friction which it is unable to immediately due to low torque.
 
 \chapter{DC Motor Characterization}
 \begin{table}[H]
@@ -124,6 +175,141 @@ The motor does not start turning immediately after the voltage is applied is bec
     \label{tab:activity2}
 \end{table}
 
-The following represents
+The following represents the graph plotted:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/activity2graph.png}
+    \caption{Graph of Angular Speed, $\omega$ (rad/s) against Motor Current, $I_m$}
+    \label{fig:activity2graph}
+\end{figure}
+
+The equation of the curve is:
+$$I_m = -0.00229 \times \omega + 0.97041$$
+
+In stall conditions, $\omega = 0$, thus we have that:
+
+$$I_\text{stall} = 0.97041 \approx \textbf{0.970 A}$$
+
+In no-load conditions, $I_m = 0$, thus we have that:
+\begin{align*}
+    \omega_\text{no-load} &= \frac{0.97041}{0.00229}\\
+    \omega_\text{no-load} &= 423.75983\text{ rad/s} \\
+    N_\text{no-load} &= 423.75983 \times \frac{60}{2\pi} \\
+    &= 4046.60830\text{ RPM} \\
+    &\approx \textbf{4050 RPM}
+\end{align*}
+
+As for the motor resistance, we can compute it under stall conditions as follows:
+\begin{align*}
+    V_m &= I_\text{stall} R \\
+    R &= \frac{12.0}{0.97041} \\
+    &= 12.36591\text{ }\Omega \\
+    &\approx \textbf{12.366 }\bf{\Omega}
+\end{align*}
+
+For the back emf constant $K_e$, we can compute it under no-load conditions as follows:
+\begin{align*}
+    \omega &= \frac{V_m}{K_e} \\
+    K_e &= \frac{12.0}{423.75983} \\
+    &= 0.028318\text{ V-s/rad} \\
+    &\approx \textbf{28.318 mV-s/rad}
+\end{align*}
+
+Since this is a PMDC motor, we can simply say that $K_t = K_e = 0.028318$ V-s/rad $\approx$ \textbf{28.318 mV-s/rad}.
+
+\chapter{Actual Testing}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+     \hline PWM Frequecy (kHz) & $t_p$ (in $\mu$s) & $t_\text{on}$ (in $\mu$s) & PWM Noise Audible?  \\
+     \hline 1 & 1000 & 500 & Yes \\
+     2 & 500 & 250  & Yes \\
+     4 & 250 & 125 & Yes \\
+     10 & 100 & 50  & No \\
+     20 & 50 & 25 & No \\
+     \hline
+    \end{tabular}
+    \caption{Audibility Based off Frequency}
+    \label{tab:audibility}
+\end{table}
+
+\begin{tcolorbox}
+    \textbf{From your observations, which of the following frequencies in Table III would be more appropriate if there are humans working in the vicinity of a PWM-controlled motor?} \\
+    20kHz. It's the least audible and will be the least annoying for such workers.
+\end{tcolorbox}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline Duty Cycle (\%) & $t_\text{on}$ (in $\mu$s) \\
+        \hline 50 & 25 \\
+         60 & 30 \\
+         70 & 35 \\
+         80 & 40 \\
+         90 & 45 \\
+         100 & 50 \\
+         \hline
+    \end{tabular}
+    \caption{Duty Cycle at PWM Frequency of 20 kHz}
+    \label{tab:duties}
+\end{table}
+
+\begin{tcolorbox}
+\textbf{Can you observe the increase in speed as the duty cycle increases?}\\
+Yes, I noticed. It is very cool.
+\end{tcolorbox}
+\chapter{Challenge Yourself}
+
+\textbf{Modify the Arduino code, so that the wheel will spin in one direction for 10 seconds, and then reverse for 10 seconds. Repeat this indefinitely. You may choose any duty cycle.} \\
+
+I am using Platform.io, hence the inclusion of the \texttt{include} line.
+
+\begin{ino}
+#include "Arduino.h"
+
+// Give names to the pins of Arduino to be used and
+// define their values as integer
+int Ena = 7;  // IO port 7 will be connected to Pin 9 (Enable) of L293D
+int Mot1 = 5; // IO port 5 will be connected to Pin 15 of L293D
+int Mot2 = 6; // IO port 6 will be connected to Pin 10 of L293D
+int tp;       // Define a variable for period of PWM
+int tON;      // Define a variable for ON time
+int tOFF;     // Define a variable for OFF time
+long tTotal;
+
+// Following section will be run once at the beginning.
+void setup()
+{
+  pinMode(Ena, OUTPUT);    // OUTPUT from Arduino
+  pinMode(Mot1, OUTPUT);   // OUTPUT from Arduino
+  pinMode(Mot2, OUTPUT);   // OUTPUT from Arduino
+  digitalWrite(Ena, HIGH); // Enable pin is set to logic HIGH
+  digitalWrite(Mot1, LOW); // Both control pins are initialized
+  digitalWrite(Mot2, LOW); // to LOW so motor won't spin for now
+  tp = 1000;                // Period is 500 microseconds; must be >= tON
+  tON = 500;               // ON for 300 microseconds
+  tOFF = tp - tON;         // OFF for remaining time of the period
+  tTotal = 10000000;
+}
+
+void loop()
+{
+  for(int i = 0; i < (tTotal/tp); i++) {
+    digitalWrite(Mot1, HIGH);
+    delayMicroseconds(tON);
+    digitalWrite(Mot1, LOW);
+    delayMicroseconds(tOFF);
+  }
+  for (int i = 0; i < (tTotal / tp); i++)
+  {
+    digitalWrite(Mot2, HIGH);
+    delayMicroseconds(tON);
+    digitalWrite(Mot2, LOW);
+    delayMicroseconds(tOFF);
+  }
+}
+
+\end{ino}
 
 \end{document}

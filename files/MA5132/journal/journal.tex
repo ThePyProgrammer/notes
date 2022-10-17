@@ -1,0 +1,212 @@
+\documentclass[12pt]{exam}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage[a4paper, margin=0.45in]{geometry}
+\usepackage{tcolorbox}
+\usepackage{amsmath}
+\usepackage{float}
+
+%%%%%%%%%% FIGURES %%%%%%%%%%%
+\usepackage[justification=centering]{caption} % Figures caption
+\usepackage{graphicx}
+\captionsetup{labelsep = period} % Figure 2. Caption (rather than Figure 2: Caption)
+\usepackage{float} % To place figures where I want with [H]
+\renewcommand{\figurename}{Fig.} % Fig.2 (rather than Figure 2)
+\usepackage[export]{adjustbox}
+\usepackage{caption, subcaption, floatrow}
+
+\makeatletter
+\newcommand{\@giventhatstar}[2]{\left(#1\;\middle|\;#2\right)}
+\newcommand{\@giventhatnostar}[3][]{#1(#2\;#1|\;#3#1)}
+\newcommand{\giventhat}{\@ifstar\@giventhatstar\@giventhatnostar}
+\makeatother
+\usepackage{array}
+\usepackage{makecell}
+\renewcommand{\cellalign}{vh}
+\renewcommand{\theadalign}{vh}
+\renewcommand\theadalign{c}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+
+% Set the overall layout of the tree
+\tikzstyle{level 1}=[level distance=4cm, sibling distance=2.5cm]
+\tikzstyle{level 2}=[level distance=4cm, sibling distance=1.5cm]
+
+% Define styles for bags and leafs
+\tikzstyle{bag} = [text width=4em, text centered]
+\tikzstyle{end} = [circle, minimum width=3pt,fill, inner sep=0pt]
+
+\setlength{\columnsep}{1cm}
+\sectionfont{\fontsize{14}{15}\selectfont}
+\subsectionfont{\fontsize{12}{15}\selectfont}
+
+
+\title{\LARGE \textbf{MA5132 Journal} 
+\large by Prannaya Gupta (M22504)}
+\date{}
+\begin{document}
+\maketitle
+
+\vspace{-2.5cm}
+\section{Article 1}
+\begin{questions}
+\question Using the information given in Question 1, draw a tree diagram to represent the probabilities given.
+
+\begin{tcolorbox}
+    Let $B$ denote the event of "Having Breast Cancer" and $T$ denote the event of "Testing Positive". Let the superscript $A^c$ denote the complement of an event $A$.
+    
+    % The sloped option gives rotated edge labels. Personally
+    % I find sloped labels a bit difficult to read. Remove the sloped options
+    % to get horizontal labels. 
+    \begin{tikzpicture}[grow=right]
+    \node[bag] {All Women}
+        child {
+            node[bag] {Have Breast Cancer, $B$}        
+                child {
+                    node[end, label=right:
+                        {$P(B\cap T^c)=0.01 \cdot 0.1 = 0.001$}] {}
+                    edge from parent
+                    node[above] {$T^c$}
+                    node[below]  {$0.1$}
+                }
+                child {
+                    node[end, label=right:
+                        {$P(B\cap T)= 0.01 \cdot 0.9 = 0.009$}] {}
+                    edge from parent
+                    node[above] {$T$}
+                    node[below]  {$0.9$}
+                }
+                edge from parent 
+                node[above] {$B$}
+                node[below]  {$0.01$}
+        }
+        child {
+            node[bag] {Don't have Breast Cancer, $B^c$}        
+            child {
+                    node[end, label=right:
+                        {$P(B^c\cap T^c)=0.91 \cdot 0.99 = 0.9009$}] {}
+                    edge from parent
+                    node[above] {$T^c$}
+                    node[below]  {$0.91$}
+                }
+                child {
+                    node[end, label=right:
+                        {$P(B^c\cap T)=0.99\cdot0.09 = 0.0891$}] {}
+                    edge from parent
+                    node[above] {$T$}
+                    node[below]  {$0.09$}
+                }
+            edge from parent         
+                node[above] {$B^c$}
+                node[below]  {$0.99$}
+        };
+    \end{tikzpicture}
+\end{tcolorbox}
+
+\question Calculate to 6 d.p. the probability of a woman who tests positive having breast cancer.
+\begin{tcolorbox}\vspace{-0.5cm}
+\begin{align*}
+    P\left(B\;\middle|\;T\right) = \frac{P(B \cap T)}{P(B\cap T) + P(B^c \cap T)} = \frac{0.009}{0.009 + 0.0891} = \frac{0.009}{0.0981} = \frac{10}{109} \approx \textbf{0.091743}\text{ (6 d.p.)}
+\end{align*}
+\end{tcolorbox}
+
+\question What is the probability that a women who tests positive for screening twice have breast cancer?
+\begin{tcolorbox}
+Assuming independent tests, and letting $T_1$ denote testing positive the first time and $T_2$ denoting testing positive the second time:
+\begin{align*}
+    P(B \cap T_1 \cap T_2) &= 0.01 \cdot 0.9 \times 0.9 = 0.0081\\
+    P(T_1) = P(T_2) &= P(T) = 0.009 + 0.0891 = 0.0981 \\
+    P\left(B\;\middle|\;T_1\cap T_2\right) &= \frac{P(B \cap T_1 \cap T_2)}{P(T_1) P(T_2)} = \frac{0.0081}{0.0981^2} \approx \textbf{0.841680} \text{ (6 d.p.)}
+\end{align*}
+\end{tcolorbox}
+
+\end{questions}
+\vspace{-0.5cm}
+
+\section{Article 2}
+\begin{questions}
+\question Mickey currently had \$400 dollars in his prize pool. What would you advise him to do?
+\begin{tcolorbox}
+Representing $W$ as the amount of money in Mickey's pool after spinning the wheel and $\$m$ as his initial prize pool. The distribution of $W$ is:
+\vspace{-0.2cm}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline $w$ & $m + 50$ & $m+100$ & $m+500$ & $m/2$ & 0  \\
+        \hline $P(W=w)$ & 0.5 & 0.25 & $1/12$ & $1/12$& $1/12$ \\
+        \hline
+    \end{tabular}
+\end{table}
+\vspace{-1cm}
+\begin{align*}
+    E(W) &= \frac{1}{2}\left(m+50\right)+\frac{1}{4}\left(m+100\right)+\frac{1}{12}\left(m+500\right)+\frac{1}{12}\frac{m}{2} \\
+    &= \left(\frac{1}{2}+\frac{1}{4}+\frac{1}{12}+\frac{1}{24}\right)m + 25 + 25 + \frac{500}{12} = \frac{7}{8} m + \frac{1100}{12}
+\end{align*}
+When $n = 400$, $E(W) = 350 + \frac{1100}{12} > 400$, thus he should spin.
+\end{tcolorbox}
+\question Calculate $M$ such that one should only spin the wheel if they have less than \$$M$.
+\begin{tcolorbox}\vspace{-0.5cm}
+\begin{align*}
+    m < \frac{7}{8} m + \frac{1100}{12} &\implies m < 8 \times \frac{1100}{12} \implies M = \textbf{733.333}\text{ (3 d.p.)}
+\end{align*}
+\end{tcolorbox}
+\end{questions}
+
+
+\section{Reflection and Analysis}
+Let's focus on a specific example, involving \textbf{Game Theory}, specifically a variation of the Sheriff's Dilemma. Say you're in a group project, wherein you have been appointed as group leader in a group of 3. However, you know for a fact that if you get on your teammates' bad side, they will report you. You are working on a script, and overnight, the script was completely deleted by someone in your team. You approach the person you suspect caused this, Todd. The probability of him being guilty is $p$. \\
+
+You intend to report Todd, doing which would incur a two point loss in a hypothetical point system, but you would also lose those same number of points if reported. However, you know that if he were innocent, then you would lose a point for incorrectly reporting him, but you would gain two points for correctly reporting him given he is guilty. An innocent Todd, as an understanding teammate, will be deincentivized from reporting you and will hence lose one point for reporting you. On the other hand, a guilty Todd will receive two points for reporting you. A potential payoff system is demonstrated below:
+\begin{table*}[h]
+   \centering
+   \captionsetup[subtable]{position = below}
+   \begin{subtable}{0.3\linewidth}
+       \centering
+       \begin{tabular}{|c|c|c|}
+           \hline
+           & \thead{You\\report} & \thead{You don't\\report} \\ \hline
+           \textbf{\makecell{He\\reports}} & 0, 0 & 2, -2 \\ \hline
+           \textbf{\makecell{He doesn't\\ report}} & -2, 2 & -1, 0 \\ \hline
+       \end{tabular}
+       \caption{Todd is guilty ($p$)}
+       \label{tab:guilty}
+   \end{subtable}
+   \hspace*{4em}
+   \begin{subtable}{0.3\linewidth}
+       \centering
+       \begin{tabular}{|c|c|c|}
+           \hline
+           & \thead{You\\report} & \thead{You don't\\report} \\ \hline
+           \textbf{\makecell{He\\reports}} & -3, -3 & -1, -2 \\ \hline
+           \textbf{\makecell{He doesn't\\ report}} & -2, -1 & 0, 0 \\ \hline
+       \end{tabular}
+       \caption{Todd is innocent ($1-p$)}
+       \label{tab:innocent}
+   \end{subtable}
+\end{table*}
+
+We assume that two of you are rational and thus, we apply the game theory concept known as \textbf{Bayesian Equilibrium}, which maps probablistically every action. We start by considering Todd, who (if rational) should be able to comprehend that if he is innocent, he loses more points for reporting, hence he will decide to never report, and if he is guilty, he gains points for reporting and loses for not doing so, hence he will decide to always report. Thus we have the following probabilistic confusion matrix for the $E(\text{payoff})$:
+
+\begin{table}[H]
+\centering
+       \begin{tabular}{|c|c|}
+           \hline
+           \thead{You report} & \thead{You don't report} \\ \hline
+           $2p-2$, $p-1$ & $2p$, $-2p$ \\ \hline
+       \end{tabular}
+       % \caption{Table of Overall Probabilities}
+       \label{tab:prob}
+\end{table}
+
+You note that you will still have net loss of payoff, but you will prefer reporting if and only if the following condition is obeyed:
+\begin{align*}
+    p - 1 &> -2p \\
+    3p &> 1 \\
+    p &> \frac{1}{3} \approx 0.333 \\
+\end{align*}
+
+This proves that if the probability of Todd being guilty is greater than 0.333, then reporting him is in fact your best course of action.
+
+\end{document}

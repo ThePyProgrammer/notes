@@ -1,0 +1,745 @@
+\begin{thebibliography}{138}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Abadi et~al.(2015)Abadi, Agarwal, Barham, Brevdo, Chen, Citro,
+  Corrado, Davis, Dean, Devin, Ghemawat, Goodfellow, Harp, Irving, Isard, Jia,
+  Jozefowicz, Kaiser, Kudlur, Levenberg, Man\'{e}, Monga, Moore, Murray, Olah,
+  Schuster, Shlens, Steiner, Sutskever, Talwar, Tucker, Vanhoucke, Vasudevan,
+  Vi\'{e}gas, Vinyals, Warden, Wattenberg, Wicke, Yu, and
+  Zheng}]{tensorflow2015whitepaper}
+Abadi M, Agarwal A, Barham P, Brevdo E, Chen Z, Citro C, Corrado GS, Davis A,
+  Dean J, Devin M, Ghemawat S, Goodfellow I, Harp A, Irving G, Isard M, Jia Y,
+  Jozefowicz R, Kaiser L, Kudlur M, Levenberg J, Man\'{e} D, Monga R, Moore S,
+  Murray D, Olah C, Schuster M, Shlens J, Steiner B, Sutskever I, Talwar K,
+  Tucker P, Vanhoucke V, Vasudevan V, Vi\'{e}gas F, Vinyals O, Warden P,
+  Wattenberg M, Wicke M, Yu Y, Zheng X (2015) {TensorFlow}: Large-scale machine
+  learning on heterogeneous systems.
+  \urlprefix\url{https://www.tensorflow.org/}, {A}ccessed 28 Feb 2019
+
+\bibitem[{Al-Jowder et~al.(1997)Al-Jowder, Kemsley, and
+  Wilson}]{alJowder1997mid}
+Al-Jowder O, Kemsley E, Wilson R (1997) Mid-infrared spectroscopy and
+  authenticity problems in selected meats: a feasibility study. Food Chemistry
+  59(2):195 -- 201
+
+\bibitem[{Aswolinskiy et~al.(2016)Aswolinskiy, Reinhart, and
+  Steil}]{aswolinskiy2016time}
+Aswolinskiy W, Reinhart RF, Steil J (2016) Time series classification in
+  reservoir- and model-space: A comparison. In: Artificial Neural Networks in
+  Pattern Recognition, pp 197--208
+
+\bibitem[{Aswolinskiy et~al.(2017)Aswolinskiy, Reinhart, and
+  Steil}]{aswolinskiy2017time}
+Aswolinskiy W, Reinhart RF, Steil J (2017) Time series classification in
+  reservoir- and model-space. Neural Processing Letters 48:789--809
+
+\bibitem[{Bagnall and Janacek(2014)}]{bagnall2014a}
+Bagnall A, Janacek G (2014) A run length transformation for discriminating
+  between auto regressive time series. Journal of Classification 31(2):154--178
+
+\bibitem[{Bagnall et~al.(2016)Bagnall, Lines, Hills, and
+  Bostrom}]{bagnall2016time}
+Bagnall A, Lines J, Hills J, Bostrom A (2016) Time-series classification with
+  {COTE}: The collective of transformation-based ensembles. In: International
+  Conference on Data Engineering, pp 1548--1549
+
+\bibitem[{Bagnall et~al.(2017)Bagnall, Lines, Bostrom, Large, and
+  Keogh}]{bagnall2017the}
+Bagnall A, Lines J, Bostrom A, Large J, Keogh E (2017) The great time series
+  classification bake off: a review and experimental evaluation of recent
+  algorithmic advances. Data Mining and Knowledge Discovery 31(3):606--660
+
+\bibitem[{{Bahdanau} et~al.(2015){Bahdanau}, {Cho}, and
+  {Bengio}}]{bahdanau2015neural}
+{Bahdanau} D, {Cho} K, {Bengio} Y (2015) {Neural Machine Translation by Jointly
+  Learning to Align and Translate}. In: International Conference on Learning
+  Representations
+
+\bibitem[{Baird(1992)}]{baird1992document}
+Baird HS (1992) Document Image Defect Models, Springer, Berlin, pp 546--556
+
+\bibitem[{Banerjee et~al.(2017)Banerjee, Islam, Mei, Xiao, Zhang, Xu, Ji, and
+  Li}]{banerjee2017a}
+Banerjee D, Islam K, Mei G, Xiao L, Zhang G, Xu R, Ji S, Li J (2017) A deep
+  transfer learning approach for improved post-traumatic stress disorder
+  diagnosis. In: IEEE International Conference on Data Mining, pp 11--20
+
+\bibitem[{Baydogan(2015)}]{baydogan2015mts}
+Baydogan MG (2015) Multivariate time series classification datasets.
+  \url{http://www.mustafabaydogan.com}, {A}ccessed 28 Feb 2019
+
+\bibitem[{Baydogan et~al.(2013)Baydogan, Runger, and Tuv}]{baydogan2013a}
+Baydogan MG, Runger G, Tuv E (2013) A bag-of-features framework to classify
+  time series. IEEE Transactions on Pattern Analysis and Machine Intelligence
+  35(11):2796--2802
+
+\bibitem[{Bellman(2010)}]{bellman2010dynamic}
+Bellman R (2010) Dynamic Programming. Princeton University Press
+
+\bibitem[{Benavoli et~al.(2016)Benavoli, Corani, and
+  Mangili}]{benavoli2016should}
+Benavoli A, Corani G, Mangili F (2016) Should we really use post-hoc tests
+  based on mean-ranks? Machine Learning Research 17(1):152--161
+
+\bibitem[{Bengio et~al.(2013)Bengio, Yao, Alain, and
+  Vincent}]{bengio2013generalized}
+Bengio Y, Yao L, Alain G, Vincent P (2013) Generalized denoising auto-encoders
+  as generative models. In: International Conference on Neural Information
+  Processing Systems, pp 899--907
+
+\bibitem[{{Bianchi} et~al.(2018){Bianchi}, {Scardapane}, {L{\o}kse}, and
+  {Jenssen}}]{bianchi2018reservoir}
+{Bianchi} FM, {Scardapane} S, {L{\o}kse} S, {Jenssen} R (2018) {Reservoir
+  computing approaches for representation and classification of multivariate
+  time series}. ArXiv \eprint{1803.07870}
+
+\bibitem[{Bishop(2006)}]{bishop2006pattern}
+Bishop C (2006) Pattern Recognition and Machine Learning. Springer
+
+\bibitem[{Bostrom and Bagnall(2015)}]{bostrom2015binary}
+Bostrom A, Bagnall A (2015) Binary shapelet transform for multiclass time
+  series classification. In: Big Data Analytics and Knowledge Discovery, pp
+  257--269
+
+\bibitem[{Che et~al.(2017{\natexlab{a}})Che, Cheng, Zhai, Sun, and
+  Liu}]{che2017boosting}
+Che Z, Cheng Y, Zhai S, Sun Z, Liu Y (2017{\natexlab{a}}) Boosting deep
+  learning risk prediction with generative adversarial networks for electronic
+  health records. In: IEEE International Conference on Data Mining, pp 787--792
+
+\bibitem[{Che et~al.(2017{\natexlab{b}})Che, He, Xu, and Liu}]{che2017decade}
+Che Z, He X, Xu K, Liu Y (2017{\natexlab{b}}) {DECADE}: {A} deep metric
+  learning model for multivariate time series. In: KDD Workshop on Mining and
+  Learning from Time Series
+
+\bibitem[{Chen et~al.(2013)Chen, Tang, Tino, and Yao}]{chen2013model}
+Chen H, Tang F, Tino P, Yao X (2013) Model-based kernel for efficient time
+  series analysis. In: ACM SIGKDD International Conference on Knowledge
+  Discovery and Data Mining, pp 392--400
+
+\bibitem[{Chen et~al.(2015{\natexlab{a}})Chen, Tang, Ti{\~n}o, Cohn, and
+  Yao}]{chen2015model}
+Chen H, Tang F, Ti{\~n}o P, Cohn A, Yao X (2015{\natexlab{a}}) Model metric
+  co-learning for time series classification. In: International Joint
+  Conference on Artificial Intelligence, pp 3387 -- 3394
+
+\bibitem[{Chen et~al.(2015{\natexlab{b}})Chen, Keogh, Hu, Begum, Bagnall,
+  Mueen, and Batista}]{ucrarchive}
+Chen Y, Keogh E, Hu B, Begum N, Bagnall A, Mueen A, Batista G
+  (2015{\natexlab{b}}) The {UCR} time series classification archive.
+  \url{www.cs.ucr.edu/~eamonn/time_series_data/}, {A}ccessed 28 Feb 2019
+
+\bibitem[{Chollet(2015)}]{chollet2015keras}
+Chollet Fea (2015) Keras. \url{https://keras.io}, {A}ccessed 28 Feb 2019
+
+\bibitem[{{Chouikhi} et~al.(2018){Chouikhi}, {Ammar}, and
+  {Alimi}}]{chouikhi2018genesis}
+{Chouikhi} N, {Ammar} B, {Alimi} AM (2018) Genesis of basic and multi-layer
+  echo state network recurrent autoencoders for efficient data representations.
+  ArXiv \eprint{1804.08996}
+
+\bibitem[{{Cristian Borges Gamboa}(2017)}]{gamboa2017deep}
+{Cristian Borges Gamboa} J (2017) Deep learning for time-series analysis. ArXiv
+  \eprint{1701.01887}
+
+\bibitem[{{Cui} et~al.(2016){Cui}, {Chen}, and {Chen}}]{cui2016multi}
+{Cui} Z, {Chen} W, {Chen} Y (2016) Multi-scale convolutional neural networks
+  for time series classification. ArXiv \eprint{1603.06995}
+
+\bibitem[{Dau et~al.(2017)Dau, Silva, Petitjean, Forestier, Bagnall, and
+  Keogh}]{dau2017judicious}
+Dau HA, Silva DF, Petitjean F, Forestier G, Bagnall A, Keogh E (2017) Judicious
+  setting of dynamic time warping's window width allows more accurate
+  classification of time series. In: IEEE International Conference on Big Data,
+  pp 917--922
+
+\bibitem[{{Dau} et~al.(2018){Dau}, {Bagnall}, {Kamgar}, {Yeh}, {Zhu},
+  {Gharghabi}, {Ratanamahatana}, and {Keogh}}]{dau2018the}
+{Dau} HA, {Bagnall} A, {Kamgar} K, {Yeh} CCM, {Zhu} Y, {Gharghabi} S,
+  {Ratanamahatana} CA, {Keogh} E (2018) {The UCR Time Series Archive}. ArXiv
+  \eprint{1810.07758}
+
+\bibitem[{Dem\v{s}ar(2006)}]{demsar2006statistical}
+Dem\v{s}ar J (2006) Statistical comparisons of classifiers over multiple data
+  sets. Machine Learning Research 7:1--30
+
+\bibitem[{Deng et~al.(2013)Deng, Runger, Tuv, and Vladimir}]{deng2013a}
+Deng H, Runger G, Tuv E, Vladimir M (2013) A time series forest for
+  classification and feature extraction. Information Sciences 239:142 -- 153
+
+\bibitem[{Esling and Agon(2012)}]{esling2012time}
+Esling P, Agon C (2012) Time-series data mining. ACM Computing Surveys
+  45(1):12:1--12:34
+
+\bibitem[{Faust et~al.(2018)Faust, Hagiwara, Hong, Lih, and
+  Acharya}]{faust2018deep}
+Faust O, Hagiwara Y, Hong TJ, Lih OS, Acharya UR (2018) Deep learning for
+  healthcare applications based on physiological signals: A review. Computer
+  Methods and Programs in Biomedicine 161:1 -- 13
+
+\bibitem[{Forestier et~al.(2017)Forestier, Petitjean, Dau, Webb, and
+  Keogh}]{forestier2017generating}
+Forestier G, Petitjean F, Dau HA, Webb GI, Keogh E (2017) Generating synthetic
+  time series to augment sparse datasets. In: IEEE International Conference on
+  Data Mining, pp 865--870
+
+\bibitem[{Friedman(1940)}]{friedman1940a}
+Friedman M (1940) A comparison of alternative tests of significance for the
+  problem of $m$ rankings. The Annals of Mathematical Statistics 11(1):86--92
+
+\bibitem[{{Gallicchio} and {Micheli}(2017)}]{gallicchio2017deep}
+{Gallicchio} C, {Micheli} A (2017) Deep echo state network ({DeepESN}): {A}
+  brief survey. ArXiv \eprint{1712.04323}
+
+\bibitem[{Garcia and Herrera(2008)}]{garcia2008an}
+Garcia S, Herrera F (2008) An extension on ``statistical comparisons of
+  classifiers over multiple data sets'' for all pairwise comparisons. Machine
+  learning research 9:2677--2694
+
+\bibitem[{{Geng} and {Luo}(2018)}]{geng2018cost}
+{Geng} Y, {Luo} X (2018) Cost-sensitive convolution based neural networks for
+  imbalanced time-series classification. ArXiv \eprint{1801.04396}
+
+\bibitem[{Glorot and Bengio(2010)}]{glorot2010understanding}
+Glorot X, Bengio Y (2010) Understanding the difficulty of training deep
+  feedforward neural networks. In: International Conference on Artificial
+  Intelligence and Statistics, vol~9, pp 249--256
+
+\bibitem[{Goldberg(2016)}]{goldberg2016a}
+Goldberg Y (2016) A primer on neural network models for natural language
+  processing. Artificial Intelligence Research 57(1):345--420
+
+\bibitem[{Gong et~al.(2018)Gong, Chen, Yuan, and Yao}]{gong2018Multiobjective}
+Gong Z, Chen H, Yuan B, Yao X (2018) Multiobjective learning in the model space
+  for time series classification. IEEE Transactions on Cybernetics 99:1--15
+
+\bibitem[{Grabocka et~al.(2014)Grabocka, Schilling, Wistuba, and
+  Schmidt-Thieme}]{grabocka2014learning}
+Grabocka J, Schilling N, Wistuba M, Schmidt-Thieme L (2014) Learning
+  time-series shapelets. In: ACM SIGKDD International Conference on Knowledge
+  Discovery and Data Mining, pp 392--401
+
+\bibitem[{{Hatami} et~al.(2017){Hatami}, {Gavet}, and
+  {Debayle}}]{hatami2017classification}
+{Hatami} N, {Gavet} Y, {Debayle} J (2017) {Classification of time-series images
+  using deep convolutional neural networks}. In: International Conference on
+  Machine Vision
+
+\bibitem[{He et~al.(2015)He, Zhang, Ren, and Sun}]{he2015delving}
+He K, Zhang X, Ren S, Sun J (2015) Delving deep into rectifiers: Surpassing
+  human-level performance on imagenet classification. In: IEEE International
+  Conference on Computer Vision, pp 1026--1034
+
+\bibitem[{He et~al.(2016)He, Zhang, Ren, and Sun}]{he2016deep}
+He K, Zhang X, Ren S, Sun J (2016) Deep residual learning for image
+  recognition. In: IEEE Conference on Computer Vision and Pattern Recognition,
+  pp 770--778
+
+\bibitem[{Hills et~al.(2014)Hills, Lines, Baranauskas, Mapp, and
+  Bagnall}]{hills2014classification}
+Hills J, Lines J, Baranauskas E, Mapp J, Bagnall A (2014) Classification of
+  time series by shapelet transformation. Data Mining and Knowledge Discovery
+  28(4):851--881
+
+\bibitem[{Hinton et~al.(2012)Hinton, Deng, Yu, Dahl, Mohamed, Jaitly, Senior,
+  Vanhoucke, Nguyen, Sainath, and Kingsbury}]{hinton2012deep}
+Hinton G, Deng L, Yu D, Dahl GE, Mohamed AR, Jaitly N, Senior A, Vanhoucke V,
+  Nguyen P, Sainath TN, Kingsbury B (2012) Deep neural networks for acoustic
+  modeling in speech recognition: The shared views of four research groups.
+  IEEE Signal Processing Magazine 29(6):82--97
+
+\bibitem[{Hoerl and Kennard(1970)}]{hoerl1970ridge}
+Hoerl AE, Kennard RW (1970) Ridge regression: Applications to nonorthogonal
+  problems. Technometrics 12(1):69--82
+
+\bibitem[{Holm(1979)}]{holm1979a}
+Holm S (1979) A simple sequentially rejective multiple test procedure.
+  Scandinavian Journal of Statistics 6(2):65--70
+
+\bibitem[{H{\"o}ppner(2016)}]{hoppner2016improving}
+H{\"o}ppner F (2016) Improving time series similarity measures by integrating
+  preprocessing steps. Data Mining and Knowledge Discovery 31:851--878
+
+\bibitem[{Hu et~al.(2016)Hu, Zhang, and Zhou}]{hu2016transfer}
+Hu Q, Zhang R, Zhou Y (2016) Transfer learning for short-term wind speed
+  prediction with deep neural networks. Renewable Energy 85:83 -- 95
+
+\bibitem[{Ignatov(2018)}]{ignatov2018activity}
+Ignatov A (2018) Real-time human activity recognition from accelerometer data
+  using convolutional neural networks. Applied Soft Computing 62:915 -- 922
+
+\bibitem[{Ioffe and Szegedy(2015)}]{ioffe2015batch}
+Ioffe S, Szegedy C (2015) Batch normalization: Accelerating deep network
+  training by reducing internal covariate shift. In: International Conference
+  on Machine Learning, vol~37, pp 448--456
+
+\bibitem[{Ismail~Fawaz et~al.(2018{\natexlab{a}})Ismail~Fawaz, Forestier,
+  Weber, Idoumghar, and Muller}]{ismailFawaz2018data}
+Ismail~Fawaz H, Forestier G, Weber J, Idoumghar L, Muller PA
+  (2018{\natexlab{a}}) Data augmentation using synthetic data for time series
+  classification with deep residual networks. In: International Workshop on
+  Advanced Analytics and Learning on Temporal Data, {ECML} {PKDD}
+
+\bibitem[{Ismail~Fawaz et~al.(2018{\natexlab{b}})Ismail~Fawaz, Forestier,
+  Weber, Idoumghar, and Muller}]{ismailFawaz2018evaluating}
+Ismail~Fawaz H, Forestier G, Weber J, Idoumghar L, Muller PA
+  (2018{\natexlab{b}}) Evaluating surgical skills from kinematic data using
+  convolutional neural networks. In: Medical Image Computing and Computer
+  Assisted Intervention, pp 214--221
+
+\bibitem[{Ismail~Fawaz et~al.(2018{\natexlab{c}})Ismail~Fawaz, Forestier,
+  Weber, Idoumghar, and Muller}]{IsmailFawaz2018transfer}
+Ismail~Fawaz H, Forestier G, Weber J, Idoumghar L, Muller PA
+  (2018{\natexlab{c}}) Transfer learning for time series classification. In:
+  IEEE International Conference on Big Data, pp 1367--1376
+
+\bibitem[{Jaeger and Haas(2004)}]{jaeger2004Harnessing}
+Jaeger H, Haas H (2004) Harnessing nonlinearity: Predicting chaotic systems and
+  saving energy in wireless communication. Science 304(5667):78--80
+
+\bibitem[{Kate(2016)}]{kate2016using}
+Kate RJ (2016) Using dynamic time warping distances as features for improved
+  time series classification. Data Mining and Knowledge Discovery
+  30(2):283--312
+
+\bibitem[{Keogh and Mueen(2017)}]{keogh2017curse}
+Keogh E, Mueen A (2017) Curse of dimensionality. Encyclopedia of Machine
+  Learning and Data Mining pp 314--315
+
+\bibitem[{{Kim}(2014)}]{kim2014convolutional}
+{Kim} Y (2014) Convolutional neural networks for sentence classification. In:
+  Empirical Methods in Natural Language Processing
+
+\bibitem[{Kingma and {Ba}(2015)}]{kingma2015adam}
+Kingma DP, {Ba} J (2015) Adam: A method for stochastic optimization. In:
+  International Conference on Learning Representations
+
+\bibitem[{Kotsifakos and Papapetrou(2014)}]{kotsifakos2014model}
+Kotsifakos A, Papapetrou P (2014) Model-based time series classification. In:
+  Advances in Intelligent Data Analysis, pp 179--191
+
+\bibitem[{Krasin et~al.(2017)Krasin, Duerig, Alldrin, Ferrari, Abu-El-Haija,
+  Kuznetsova, Rom, Uijlings, Popov, Kamali, Malloci, Pont-Tuset, Veit,
+  Belongie, Gomes, Gupta, Sun, Chechik, Cai, Feng, Narayanan, and
+  Murphy}]{openimages}
+Krasin I, Duerig T, Alldrin N, Ferrari V, Abu-El-Haija S, Kuznetsova A, Rom H,
+  Uijlings J, Popov S, Kamali S, Malloci M, Pont-Tuset J, Veit A, Belongie S,
+  Gomes V, Gupta A, Sun C, Chechik G, Cai D, Feng Z, Narayanan D, Murphy K
+  (2017) {OpenImages}: A public dataset for large-scale multi-label and
+  multi-class image classification.
+  \url{https://storage.googleapis.com/openimages/web/index.html}, {A}ccessed 28
+  Feb 2019
+
+\bibitem[{Krizhevsky et~al.(2012)Krizhevsky, Sutskever, and
+  Hinton}]{krizhevsky2012imagenet}
+Krizhevsky A, Sutskever I, Hinton GE (2012) {ImageNet} classification with deep
+  convolutional neural networks. In: Advances in Neural Information Processing
+  Systems 25, pp 1097--1105
+
+\bibitem[{Kruskal and Wish(1978)}]{kruskal1978multidimensional}
+Kruskal JB, Wish M (1978) Multidimensional scaling. number 07--011 in sage
+  university paper series on quantitative applications in the social sciences
+
+\bibitem[{L\"angkvist et~al.(2014)L\"angkvist, Karlsson, and
+  Loutfi}]{langkvist2014a}
+L\"angkvist M, Karlsson L, Loutfi A (2014) A review of unsupervised feature
+  learning and deep learning for time-series modeling. Pattern Recognition
+  Letters 42:11 -- 24
+
+\bibitem[{{Large} et~al.(2017){Large}, {Lines}, and {Bagnall}}]{large2017the}
+{Large} J, {Lines} J, {Bagnall} A (2017) {The Heterogeneous Ensembles of
+  Standard Classification Algorithms (HESCA): the Whole is Greater than the Sum
+  of its Parts}. ArXiv \eprint{1710.09220}
+
+\bibitem[{Le and Mikolov(2014)}]{le2014distributed}
+Le Q, Mikolov T (2014) Distributed representations of sentences and documents.
+  In: International Conference on Machine Learning, vol~32, pp
+  II--1188--II--1196
+
+\bibitem[{Le~Guennec et~al.(2016)Le~Guennec, Malinowski, and
+  Tavenard}]{leguennec2016data}
+Le~Guennec A, Malinowski S, Tavenard R (2016) Data augmentation for time series
+  classification using convolutional neural networks. In: {ECML/PKDD Workshop
+  on Advanced Analytics and Learning on Temporal Data}
+
+\bibitem[{{LeCun} et~al.(1998{\natexlab{a}}){LeCun}, Bottou, Bengio, and
+  Haffner}]{lecun1998gradient}
+{LeCun} Y, Bottou L, Bengio Y, Haffner P (1998{\natexlab{a}}) Gradient-based
+  learning applied to document recognition. Proceedings of the IEEE
+  86(11):2278--2324
+
+\bibitem[{{LeCun} et~al.(1998{\natexlab{b}}){LeCun}, Bottou, Orr, and
+  M\"{u}ller}]{lecun1998efficient}
+{LeCun} Y, Bottou L, Orr GB, M\"{u}ller KR (1998{\natexlab{b}}) Efficient
+  backprop. In: Neural Networks: Tricks of the Trade, Springer, Berlin, pp
+  9--50
+
+\bibitem[{{LeCun} et~al.(2015){LeCun}, Bengio, and Hinton}]{lecun2015deep}
+{LeCun} Y, Bengio Y, Hinton G (2015) Deep learning. Nature 521:436--444
+
+\bibitem[{Lin and Runger(2018)}]{lin2018gcrnn}
+Lin S, Runger GC (2018) {GCRNN}: Group-constrained convolutional recurrent
+  neural network. IEEE Transactions on Neural Networks and Learning Systems
+  99:1--10
+
+\bibitem[{Lines and Bagnall(2015)}]{lines2015time}
+Lines J, Bagnall A (2015) Time series classification with ensembles of elastic
+  distance measures. Data Mining and Knowledge Discovery 29(3):565--592
+
+\bibitem[{Lines et~al.(2016)Lines, Taylor, and Bagnall}]{lines2016hive}
+Lines J, Taylor S, Bagnall A (2016) {HIVE-COTE}: The hierarchical vote
+  collective of transformation-based ensembles for time series classification.
+  In: IEEE International Conference on Data Mining, pp 1041--1046
+
+\bibitem[{Lines et~al.(2018)Lines, Taylor, and Bagnall}]{lines2018time}
+Lines J, Taylor S, Bagnall A (2018) Time series classification with
+  {HIVE-COTE}: The hierarchical vote collective of transformation-based
+  ensembles. ACM Transactions on Knowledge Discovery from Data
+  12(5):52:1--52:35
+
+\bibitem[{Liu et~al.(2018)Liu, Hsaio, and Tu}]{liu2018time}
+Liu C, Hsaio W, Tu Y (2018) Time series classification with multivariate
+  convolutional neural network. IEEE Transactions on Industrial Electronics
+  66:1--1
+
+\bibitem[{Lu et~al.(2015)Lu, Young, Arel, and Holleman}]{lu2015a}
+Lu J, Young S, Arel I, Holleman J (2015) A 1 tops/w analog deep
+  machine-learning engine with floating-gate storage in 0.13 $\mu$m cmos. IEEE
+  Journal of Solid-State Circuits 50(1):270--281
+
+\bibitem[{{Lucas} et~al.(2018){Lucas}, {Shifaz}, {Pelletier}, {O'Neill},
+  {Zaidi}, {Goethals}, {Petitjean}, and {Webb}}]{lucas2018proximity}
+{Lucas} B, {Shifaz} A, {Pelletier} C, {O'Neill} L, {Zaidi} N, {Goethals} B,
+  {Petitjean} F, {Webb} GI (2018) {Proximity Forest: An effective and scalable
+  distance-based classifier for time series}. Data Mining and Knowledge
+  Discovery 28:851--881
+
+\bibitem[{Ma et~al.(2016)Ma, Shen, Chen, Wang, Wei, and Yu}]{ma2016functional}
+Ma Q, Shen L, Chen W, Wang J, Wei J, Yu Z (2016) Functional echo state network
+  for time series classification. Information Sciences 373:1 -- 20
+
+\bibitem[{{Malhotra} et~al.(2018){Malhotra}, {TV}, {Vig}, {Agarwal}, and
+  {Shroff}}]{malhotra2017timenet}
+{Malhotra} P, {TV} V, {Vig} L, {Agarwal} P, {Shroff} G (2018) {TimeNet:
+  Pre-trained deep recurrent neural network for time series classification}.
+  In: European Symposium on Artificial Neural Networks, Computational
+  Intelligence and Machine Learning, pp 607--612
+
+\bibitem[{Martinez et~al.(2018)Martinez, Perrin, Ramasso, and
+  Rombaut}]{martinez2018a}
+Martinez C, Perrin G, Ramasso E, Rombaut M (2018) {A deep reinforcement
+  learning approach for early classification of time series}. In: {European
+  Signal Processing Conference}
+
+\bibitem[{Mehdiyev et~al.(2017)Mehdiyev, Lahann, Emrich, Enke, Fettke, and
+  Loos}]{mehdiyev2017time}
+Mehdiyev N, Lahann J, Emrich A, Enke D, Fettke P, Loos P (2017) Time series
+  classification using deep learning for process planning: A case from the
+  process industry. Procedia Computer Science 114:242 -- 249
+
+\bibitem[{{Mikolov} et~al.(2013){Mikolov}, {Chen}, {Corrado}, and
+  {Dean}}]{mikolov2013efficient}
+{Mikolov} T, {Chen} K, {Corrado} G, {Dean} J (2013) {Efficient Estimation of
+  Word Representations in Vector Space}. In: International Conference on
+  Learning Representations - Workshop
+
+\bibitem[{Mikolov et~al.(2013)Mikolov, Sutskever, Chen, Corrado, and
+  Dean}]{mikolov2013distributed}
+Mikolov T, Sutskever I, Chen K, Corrado G, Dean J (2013) Distributed
+  representations of words and phrases and their compositionality. In: Neural
+  Information Processing Systems, pp 3111--3119
+
+\bibitem[{{Mittelman}(2015)}]{mittelman2015time}
+{Mittelman} R (2015) {Time-series modeling with undecimated fully convolutional
+  neural networks}. ArXiv \eprint{1508.00317}
+
+\bibitem[{Neamtu et~al.(2018)Neamtu, Ahsan, Rundensteiner, Sarkozy, Keogh, Dau,
+  Nguyen, and Lovering}]{neamtu2018generalized}
+Neamtu R, Ahsan R, Rundensteiner EA, Sarkozy G, Keogh E, Dau HA, Nguyen C,
+  Lovering C (2018) Generalized dynamic time warping: Unleashing the warping
+  power hidden in point-wise distances. In: IEEE International Conference on
+  Data Engineering
+
+\bibitem[{Nguyen et~al.(2017)Nguyen, Gsponer, and Ifrim}]{nguyen2017time}
+Nguyen TL, Gsponer S, Ifrim G (2017) Time series classification by sequence
+  learning in all-subsequence space. In: IEEE International Conference on Data
+  Engineering, pp 947--958
+
+\bibitem[{Nwe et~al.(2017)Nwe, Dat, and Ma}]{nwe2017convolutional}
+Nwe TL, Dat TH, Ma B (2017) Convolutional neural network with multi-task
+  learning scheme for acoustic scene classification. In: Asia-Pacific Signal
+  and Information Processing Association Annual Summit and Conference, pp
+  1347--1350
+
+\bibitem[{Nweke et~al.(2018)Nweke, Teh, Al-garadi, and Alo}]{nweke2018deep}
+Nweke HF, Teh YW, Al-garadi MA, Alo UR (2018) Deep learning algorithms for
+  human activity recognition using mobile and wearable sensor networks: State
+  of the art and research challenges. Expert Systems with Applications 105:233
+  -- 261
+
+\bibitem[{Ord\'o\"nez and Roggen(2016)}]{ordonez2016deep}
+Ord\'o\"nez FJ, Roggen D (2016) Deep convolutional and {LSTM} recurrent neural
+  networks for multimodal wearable activity recognition. Sensors 16:115
+
+\bibitem[{Pan and Yang(2010)}]{pan2010a}
+Pan SJ, Yang Q (2010) A survey on transfer learning. IEEE Transactions on
+  Knowledge and Data Engineering 22(10):1345--1359
+
+\bibitem[{{Papernot} and {McDaniel}(2018)}]{papernot2018deep}
+{Papernot} N, {McDaniel} P (2018) Deep k-nearest neighbors: Towards confident,
+  interpretable and robust deep learning. ArXiv \eprint{1803.04765}
+
+\bibitem[{Pascanu et~al.(2012)Pascanu, Mikolov, and
+  Bengio}]{pascanu2012understanding}
+Pascanu R, Mikolov T, Bengio Y (2012) Understanding the exploding gradient
+  problem. ArXiv \eprint{1211.5063}
+
+\bibitem[{Pascanu et~al.(2013)Pascanu, Mikolov, and Bengio}]{pascanu2013on}
+Pascanu R, Mikolov T, Bengio Y (2013) On the difficulty of training recurrent
+  neural networks. In: International Conference on Machine Learning, vol~28, pp
+  III--1310--III--1318
+
+\bibitem[{Petitjean et~al.(2016)Petitjean, Forestier, Webb, Nicholson, Chen,
+  and Keogh}]{petitjean2016faster}
+Petitjean F, Forestier G, Webb GI, Nicholson AE, Chen Y, Keogh E (2016) Faster
+  and more accurate classification of time series by exploiting a novel dynamic
+  time warping averaging algorithm. Knowledge Information Systems 47(1):1--26
+
+\bibitem[{Poggio et~al.(2017)Poggio, Mhaskar, Rosasco, Miranda, and
+  Liao}]{poggio2017why}
+Poggio T, Mhaskar H, Rosasco L, Miranda B, Liao Q (2017) Why and when can
+  deep-but not shallow-networks avoid the curse of dimensionality: A review.
+  International Journal of Automation and Computing 14(5):503--519
+
+\bibitem[{Rajan and Thiagarajan(2018)}]{rajan2018a}
+Rajan D, Thiagarajan J (2018) A generative modeling approach to limited channel
+  ecg classification. In: IEEE Engineering in Medicine and Biology Society, vol
+  2018, p 2571
+
+\bibitem[{{Rajkomar} et~al.(2018){Rajkomar}, {Oren}, {Chen}, {Dai}, {Hajaj},
+  {Liu}, {Liu}, {Sun}, {Sundberg}, {Yee}, {Zhang}, {Duggan}, {Flores}, {Hardt},
+  {Irvine}, {Le}, {Litsch}, {Marcus}, {Mossin}, {Tansuwan}, {Wang}, {Wexler},
+  {Wilson}, {Ludwig}, {Volchenboum}, {Chou}, {Pearson}, {Madabushi}, {Shah},
+  {Butte}, {Howell}, {Cui}, {Corrado}, and {Dean}}]{rajkomar2018scalable}
+{Rajkomar} A, {Oren} E, {Chen} K, {Dai} AM, {Hajaj} N, {Liu} PJ, {Liu} X, {Sun}
+  M, {Sundberg} P, {Yee} H, {Zhang} K, {Duggan} GE, {Flores} G, {Hardt} M,
+  {Irvine} J, {Le} Q, {Litsch} K, {Marcus} J, {Mossin} A, {Tansuwan} J, {Wang}
+  D, {Wexler} J, {Wilson} J, {Ludwig} D, {Volchenboum} SL, {Chou} K, {Pearson}
+  M, {Madabushi} S, {Shah} NH, {Butte} AJ, {Howell} M, {Cui} C, {Corrado} G,
+  {Dean} J (2018) {Scalable and accurate deep learning for electronic health
+  records}. NPJ Digital Medicine 1:18
+
+\bibitem[{Ratanamahatana and Keogh(2005)}]{ratanamahatana2005three}
+Ratanamahatana CA, Keogh E (2005) Three myths about dynamic time warping data
+  mining. In: SIAM International Conference on Data Mining, pp 506--510
+
+\bibitem[{Rowe and Abbott(1995)}]{alistair1995daubechies}
+Rowe ACH, Abbott PC (1995) Daubechies wavelets and mathematica. Computers in
+  Physics 9(6):635--648
+
+\bibitem[{Russakovsky et~al.(2015)Russakovsky, Deng, Su, Krause, Satheesh, Ma,
+  Huang, Karpathy, Khosla, Bernstein, Berg, and
+  Fei-Fei}]{russakovsky2015imagenet}
+Russakovsky O, Deng J, Su H, Krause J, Satheesh S, Ma S, Huang Z, Karpathy A,
+  Khosla A, Bernstein M, Berg AC, Fei-Fei L (2015) {ImageNet} large scale
+  visual recognition challenge. International Journal of Computer Vision
+  115(3):211--252
+
+\bibitem[{Sainath et~al.(2013)Sainath, Mohamed, Kingsbury, and
+  Ramabhadran}]{sainath2013deep}
+Sainath TN, Mohamed AR, Kingsbury B, Ramabhadran B (2013) Deep convolutional
+  neural networks for {LVCSR}. In: IEEE International Conference on Acoustics,
+  Speech and Signal Processing, pp 8614--8618
+
+\bibitem[{Santos and Kern(2017)}]{santos2017a}
+Santos T, Kern R (2017) A literature survey of early time series classification
+  and deep learning. In: International Conference on Knowledge Technologies and
+  Data-driven Business
+
+\bibitem[{Sch{\"a}fer(2015)}]{schafer2015the}
+Sch{\"a}fer P (2015) The {BOSS} is concerned with time series classification in
+  the presence of noise. Data Mining and Knowledge Discovery 29(6):1505--1530
+
+\bibitem[{{Serr{\`a}} et~al.(2018){Serr{\`a}}, {Pascual}, and
+  {Karatzoglou}}]{serra2018towards}
+{Serr{\`a}} J, {Pascual} S, {Karatzoglou} A (2018) {Towards a universal neural
+  network encoder for time series}. Artificial Intelligence Research and
+  Development: Current Challenges, New Trends and Applications 308:120
+
+\bibitem[{Silva et~al.(2018)Silva, Giusti, Keogh, and
+  Batista}]{silva2018speeding}
+Silva DF, Giusti R, Keogh E, Batista G (2018) Speeding up similarity search
+  under dynamic time warping by pruning unpromising alignments. Data Mining and
+  Knowledge Discovery 32(4):988--1016
+
+\bibitem[{Srivastava et~al.(2014)Srivastava, Hinton, Krizhevsky, Sutskever, and
+  Salakhutdinov}]{srivastava2014a}
+Srivastava N, Hinton G, Krizhevsky A, Sutskever I, Salakhutdinov R (2014)
+  Dropout: A simple way to prevent neural networks from overfitting. Journal of
+  Machine Learning Research 15:1929--1958
+
+\bibitem[{Strodthoff and Strodthoff(2019)}]{strodthoff2018detecting}
+Strodthoff N, Strodthoff C (2019) Detecting and interpreting myocardial
+  infarction using fully convolutional neural networks. Physiological
+  Measurement 40(1):015001
+
+\bibitem[{Susto et~al.(2018)Susto, Cenedese, and Terzi}]{susto2018time}
+Susto GA, Cenedese A, Terzi M (2018) Time-series classification methods: Review
+  and applications to power systems data. In: Big Data Application in Power
+  Systems, pp 179 -- 220
+
+\bibitem[{Sutskever et~al.(2014)Sutskever, Vinyals, and
+  Le}]{sutskever2014sequence}
+Sutskever I, Vinyals O, Le QV (2014) Sequence to sequence learning with neural
+  networks. In: Neural Information Processing Systems, pp 3104--3112
+
+\bibitem[{Szegedy et~al.(2015)Szegedy, Liu, Jia, Sermanet, Reed, Anguelov,
+  Erhan, Vanhoucke, and Rabinovich}]{szegedy2015going}
+Szegedy C, Liu W, Jia Y, Sermanet P, Reed S, Anguelov D, Erhan D, Vanhoucke V,
+  Rabinovich A (2015) Going deeper with convolutions. In: IEEE Conference on
+  Computer Vision and Pattern Recognition, pp 1--9
+
+\bibitem[{Tanisaro and Heidemann(2016)}]{tanisaro2016time}
+Tanisaro P, Heidemann G (2016) Time series classification using time warping
+  invariant echo state networks. In: IEEE International Conference on Machine
+  Learning and Applications, pp 831--836
+
+\bibitem[{Tripathy and Acharya(2018)}]{tripathy2018use}
+Tripathy R, Acharya UR (2018) Use of features from {RR}-time series and {EEG}
+  signals for automated classification of sleep stages in deep neural network
+  framework. Biocybernetics and Biomedical Engineering 38:890--902
+
+\bibitem[{Uemura et~al.(2018)Uemura, Tomikawa, Miao, Souzaki, Ieiri, Akahoshi,
+  Lefor, and Hashizume}]{uemura2018Feasibility}
+Uemura M, Tomikawa M, Miao T, Souzaki R, Ieiri S, Akahoshi T, Lefor AK,
+  Hashizume M (2018) Feasibility of an {AI}-based measure of the hand motions
+  of expert and novice surgeons. Computational and Mathematical Methods in
+  Medicine 2018
+
+\bibitem[{{Ulyanov} et~al.(2016){Ulyanov}, {Vedaldi}, and
+  {Lempitsky}}]{ulyanov2016instance}
+{Ulyanov} D, {Vedaldi} A, {Lempitsky} V (2016) Instance normalization: The
+  missing ingredient for fast stylization. ArXiv \eprint{1607.08022}
+
+\bibitem[{Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones,
+  Gomez, Kaiser, and Polosukhin}]{vaswani2017attention}
+Vaswani A, Shazeer N, Parmar N, Uszkoreit J, Jones L, Gomez AN, Kaiser Lu,
+  Polosukhin I (2017) Attention is all you need. In: Advances in Neural
+  Information Processing Systems, pp 5998--6008
+
+\bibitem[{Wang et~al.(2018)Wang, Chen, Hao, Peng, and Hu}]{wang2018deep}
+Wang J, Chen Y, Hao S, Peng X, Hu L (2018) Deep learning for sensor-based
+  activity recognition: A survey. Pattern Recognition Letters
+
+\bibitem[{{Wang} et~al.(2018){Wang}, {Wang}, {Li}, and
+  {Wu}}]{wang2018multilevel}
+{Wang} J, {Wang} Z, {Li} J, {Wu} J (2018) Multilevel wavelet decomposition
+  network for interpretable time series analysis. In: {ACM SIGKDD International
+  Conference on Knowledge Discovery and Data Mining}, pp 2437--2446
+
+\bibitem[{Wang et~al.(2016)Wang, Wang, and Liu}]{wang2016an}
+Wang L, Wang Z, Liu S (2016) An effective multivariate time series
+  classification approach using echo state network and adaptive differential
+  evolution algorithm. Expert Systems with Applications 43:237 -- 249
+
+\bibitem[{Wang et~al.(2017{\natexlab{a}})Wang, Hua, Hao, and Xie}]{wang2017a}
+Wang S, Hua G, Hao G, Xie C (2017{\natexlab{a}}) A cycle deep belief network
+  model for multivariate time series classification. Mathematical Problems in
+  Engineering 2017:1--7
+
+\bibitem[{{Wang} et~al.(2016{\natexlab{a}}){Wang}, {Chen}, {Wang}, {Rai}, and
+  {Carin}}]{wang2016earliness}
+{Wang} W, {Chen} C, {Wang} W, {Rai} P, {Carin} L (2016{\natexlab{a}})
+  Earliness-aware deep convolutional networks for early time series
+  classification. ArXiv \eprint{1611.04578}
+
+\bibitem[{Wang and Oates(2015{\natexlab{a}})}]{wang2015Encoding}
+Wang Z, Oates T (2015{\natexlab{a}}) Encoding time series as images for visual
+  inspection and classification using tiled convolutional neural networks. In:
+  Workshops at AAAI Conference on Artificial Intelligence, pp 40--46
+
+\bibitem[{Wang and Oates(2015{\natexlab{b}})}]{wang2015imaging}
+Wang Z, Oates T (2015{\natexlab{b}}) Imaging time-series to improve
+  classification and imputation. In: International Conference on Artificial
+  Intelligence, pp 3939--3945
+
+\bibitem[{{Wang} and {Oates}(2015)}]{wang2015spatially}
+{Wang} Z, {Oates} T (2015) Spatially encoding temporal correlations to classify
+  temporal data using convolutional neural networks. ArXiv \eprint{1509.07481}
+
+\bibitem[{{Wang} et~al.(2016{\natexlab{b}}){Wang}, {Song}, {Liu}, {Zhang},
+  {Xue}, {Ye}, {Fan}, and {Xu}}]{wang2016representation}
+{Wang} Z, {Song} W, {Liu} L, {Zhang} F, {Xue} J, {Ye} Y, {Fan} M, {Xu} M
+  (2016{\natexlab{b}}) Representation learning with deconvolution for
+  multivariate time series classification and visualization. ArXiv
+  \eprint{1610.07258}
+
+\bibitem[{Wang et~al.(2017{\natexlab{b}})Wang, Yan, and Oates}]{wang2017time}
+Wang Z, Yan W, Oates T (2017{\natexlab{b}}) Time series classification from
+  scratch with deep neural networks: A strong baseline. In: International Joint
+  Conference on Neural Networks, pp 1578--1585
+
+\bibitem[{Wilcoxon(1945)}]{wilcoxon1945individual}
+Wilcoxon F (1945) Individual comparisons by ranking methods. Biometrics
+  Bulletin 1(6):80--83
+
+\bibitem[{Yang and Wu(2006)}]{yang200610}
+Yang Q, Wu X (2006) 10 challenging problems in data mining research.
+  Information Technology \& Decision Making 05(04):597--604
+
+\bibitem[{Ye and Keogh(2011)}]{ye2011time}
+Ye L, Keogh E (2011) Time series shapelets: a novel technique that allows
+  accurate, interpretable and fast classification. Data Mining and Knowledge
+  Discovery 22(1):149--182
+
+\bibitem[{Yosinski et~al.(2014)Yosinski, Clune, Bengio, and
+  Lipson}]{yosinski2014how}
+Yosinski J, Clune J, Bengio Y, Lipson H (2014) How transferable are features in
+  deep neural networks? In: International Conference on Neural Information
+  Processing Systems, vol~2, pp 3320--3328
+
+\bibitem[{{Zeiler}(2012)}]{zeiler2012adadelta}
+{Zeiler} MD (2012) {ADADELTA}: An adaptive learning rate method. ArXiv
+  \eprint{1212.5701}
+
+\bibitem[{Zhang et~al.(2017)Zhang, Bengio, Hardt, Recht, and
+  Vinyals}]{zhang2017understanding}
+Zhang C, Bengio S, Hardt M, Recht B, Vinyals O (2017) {Understanding deep
+  learning requires rethinking generalization}. In: International Conference on
+  Learning Representations
+
+\bibitem[{Zhao et~al.(2017)Zhao, Lu, Chen, Liu, and Wu}]{zhao2017convolutional}
+Zhao B, Lu H, Chen S, Liu J, Wu D (2017) Convolutional neural networks for time
+  series classification. Systems Engineering and Electronics 28(1):162--169
+
+\bibitem[{Zheng et~al.(2014)Zheng, Liu, Chen, Ge, and Zhao}]{zheng2014time}
+Zheng Y, Liu Q, Chen E, Ge Y, Zhao JL (2014) Time series classification using
+  multi-channels deep convolutional neural networks. In: Web-Age Information
+  Management, pp 298--310
+
+\bibitem[{Zheng et~al.(2016)Zheng, Liu, Chen, Ge, and
+  Zhao}]{zheng2016exploiting}
+Zheng Y, Liu Q, Chen E, Ge Y, Zhao JL (2016) Exploiting multi-channels deep
+  convolutional neural networks for multivariate time series classification.
+  Frontiers of Computer Science 10(1):96--112
+
+\bibitem[{Zhou et~al.(2016)Zhou, Khosla, Lapedriza, Oliva, and
+  Torralba}]{zhou2016learning}
+Zhou B, Khosla A, Lapedriza A, Oliva A, Torralba A (2016) Learning deep
+  features for discriminative localization. In: IEEE Conference on Computer
+  Vision and Pattern Recognition, pp 2921--2929
+
+\bibitem[{Ziat et~al.(2017)Ziat, Delasalles, Denoyer, and
+  Gallinari}]{ziat2017spatio}
+Ziat A, Delasalles E, Denoyer L, Gallinari P (2017) Spatio-temporal neural
+  networks for space-time series forecasting and relations discovery. In: IEEE
+  International Conference on Data Mining, pp 705--714
+
+\end{thebibliography}
