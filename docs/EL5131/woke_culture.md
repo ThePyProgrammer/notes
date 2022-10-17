@@ -1,5 +1,13 @@
 # Woke Culture
 
+## Defintion
+
+Woke is a slang term, which didn’t start out as one. It took birth in a dialect called African American Vernacular English (AAVE). In AAVE, awake is often rendered as woke.
+
+The term of staying woke became a watchword in parts of the black community for those who were self-aware and for those who questioned the dominant paradigm and strived for something better. "Woke" can also refer, mockingly, to a white person whose perspectives on race equity change suddenly after learning about historical injustice.
+
+Definition in oxford dictionary says ‘Alert to injustice in society, especially racism.’
+
 ## Facts (good or bad)
 
 ### Raising awareness of problems (good or bad)
