@@ -102,5 +102,6 @@ This is a combination of points from S&T **and** 4IR.
 
 ### PROBLEMS
 (oh boy there's a lot of fudging problems)
+
 - **Headsets sucks**. Not very easy to breathe, do work, prolonged usage can cause eyestrain, headaches, nausea + ~16% decreased productivity
 - **FOMO**. If this catches on, those who do not connect to such tools will be shunned from society, fear of missing out may set in, more ppl unwillingly join
