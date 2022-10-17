@@ -9,9 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "files/CS2100/tutorials/Tutorial 4.md",
+            "file": "files/CS2100/tutorials/6/tutorial6.md",
             "mode": "source",
             "source": false
+          }
+        }
+      },
+      {
+        "id": "efa4530b39ae4892",
+        "type": "leaf",
+        "state": {
+          "type": "pdf",
+          "state": {
+            "file": "files/CS2100/tutorials/6/tutorial6.pdf"
           }
         }
       }
@@ -69,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "files/CS2100/tutorials/Tutorial 4.md",
+                "file": "files/CS2100/tutorials/6/tutorial6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +99,15 @@
   },
   "active": "e6dcda074cc959db",
   "lastOpenFiles": [
+    "files/CS2100/tutorials/6/tutorial6.pdf",
+    "files/CS2100/tutorials/6/tutorial6.md",
+    "files/CS2100/notes/Number Systems.md",
+    "files/CS2100/tutorials/Tutorial 4.md",
+    "files/CS2100/tutorials/CS2100 Tutorial 3.md",
+    "files/CS2100/tutorials/1/tutorial1.pdf",
+    "files/EL5131/economicFreedom/Essay Practice I.md",
+    "files/Untitled.md",
     "docs/PC5132/chapter6.md",
-    "files/PO/sphopapers/2021/2.md.md",
-    "files/PO/sphopapers/2021/1.md.md",
-    "files/PO/sphopapers/2021/spho2021.pdf",
-    "files/PC5132/chapter6/practice/chapter6.pdf",
-    "files/CS5132/PA1/report/report.pdf",
-    "requirements.txt",
-    "docs/PC5132/index.md",
-    "docs/PC5132/chapter4.pdf",
-    "docs/pc5131/rotation.md"
+    "files/CS2100/notes/Untitled.md"
   ]
 }

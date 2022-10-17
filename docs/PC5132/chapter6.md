@@ -6,7 +6,6 @@
 	- Light in Wave Form: EM Wave
 - 
 
-
 ## The Experiment
 ![Photoelectric Experiment](https://www.researchgate.net/publication/348212745/figure/fig14/AS:976455987109899@1609816657272/Schematic-diagram-of-photoelectric-effect-setup.png)
 
@@ -17,7 +16,8 @@
 
 ### Simulation
 [You can try the simulation here.](https://phet.colorado.edu/sims/cheerpj/photoelectric/latest/photoelectric.html?simulation=photoelectric)
-<iframe src="https://phet.colorado.edu/sims/cheerpj/photoelectric/latest/photoelectric.html?simulation=photoelectric" title="Photoelectric Experiment Simulator" width="700px" height="600px"></iframe>
+<!-- <iframe src="https://phet.colorado.edu/sims/cheerpj/photoelectric/latest/photoelectric.html?simulation=photoelectric" title="Photoelectric Experiment Simulator" width="700px" height="600px"></iframe> -->
+
 
 
 ## Equations

@@ -1,5 +1,6 @@
 {
   "baseFontSize": 16,
-  "cssTheme": "Primary",
-  "translucency": false
+  "cssTheme": "Gitsidian",
+  "translucency": false,
+  "accentColor": ""
 }
