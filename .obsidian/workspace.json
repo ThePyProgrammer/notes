@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/EL5131/Science and Technology.md",
+                "file": "docs/EL5131/scitech.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/EL5131/Science and Technology.md",
+                "file": "docs/EL5131/scitech.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,10 +127,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "d28470f61ce4d247",
+  "active": "30d9ce524428ff1a",
   "lastOpenFiles": [
     "docs/EL5131/Woke Culture.md",
-    "docs/EL5131/Science and Technology.md",
+    "docs/EL5131/scitech.md",
     "files/EL5131/economicFreedom/Essay Practice II.md",
     "EL Notes.svg",
     "Excalidraw/Drawing 2022-10-17 08.22.54.excalidraw.md",
