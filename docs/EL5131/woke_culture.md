@@ -10,7 +10,7 @@ Definition in oxford dictionary says ‘Alert to injustice in society, especiall
 
 ## Facts (good or bad)
 
-### Raising awareness of problems (good or bad)
+### Raising awareness of problems (good)
 1. Black Lives Matter movement - brought attention to injustices faced by black people in America such as violence from police officers and institutional racism experienced by black people such as the effects of redlining and racial segregation.
 2. MeToo movement - brought attention to sexual harassment in Hollywood.
 
