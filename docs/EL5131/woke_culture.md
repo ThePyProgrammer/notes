@@ -20,12 +20,22 @@ Many of these are associated with the idea of raising awareness of key problems 
 #### **Black Lives Matter** (BLM) movement
 Brought attention to injustices faced by black people in America such as violence from police officers and institutional racism experienced by black people such as the effects of redlining and racial segregation.
 
-Two key turning points that instigated increaed riots against racial injustices"
+Two key turning points that instigated increaed riots against racial injustices:
+
 1. Michael Brown's death in 2011
-2. George Floyd's death in 2020
+2. UK's Belly Mu-jin-ga, a Black transport worker who died from COVID-19 in a racist attack in her workplace
+3. Minneapolis Resident George Floyd's death at the hands of some police officers during Covid-19
 
 #### **#MeToo** movement
-Started in 2017, brought attention to sexual harassment in many workplaces, and especially in Hollywood, where such was prevalent at the time. It successfully deplatformed sexual assaulters and Hollywood celebrities, e.g. Harvey Weinstein, Kevin Spacey etc.
+Started in 2017, brought attention to sexual harassment in many workplaces, and especially in Hollywood, where such was prevalent at the time. It successfully deplatformed sexual assaulters and Hollywood celebrities, e.g. Harvey Weinstein, Kevin Spacey etc. It also disenfranchized companies that supported such practices, such as Activision, whose game, Blizzard, was know for its predatory practices
+
+
+##### Statistics
+
+- In the US, 45% of Facebook users had a friend who posted with the term.
+- On Twitter, it was tweeted more than 500k times in a single day.
+- In the US, 19 states enacted new sexual protection laws: that too more than 200 of them.
+- Congress itself even recently passed the so-called MeToo Congress Act.
 
 
 ### Negative Examples
@@ -37,7 +47,10 @@ James Gunn, best known for directing the first two Guardians of the Galaxy films
 
 **Problem Exposed**: Hypersensitive woke activists often search through the old posts of hundreds of individuals instead of simply doing something useful with their lives.
 
+#### Johnny Depp
+Johnny Depp was fired from his roles in multiple movies including _Pirates of the Carribean_ and _Fantastic Beasts and where to find them_ due to allegations by his ex-wife, Amber Heard, that he had been sexually harrassing her over the course of their marriage, as was published in a 2018 article. Many companies came to distrust Depp, and many were quick to say "_I knew it_". When Johnny Depp later called a defamation lawsuit against Heard, it was revealed that the abuse wasn't as much one-sided as one was expecting, and that Depp had been psychologically and physically tortured by Amber Heard.
 
+**Problem Exposed**: Woke individuals are often quick to assume the culprits, instead of investigating the problem throroughly. This is a major problem associated with online vigilantism, where people operate outside the law to "fight crime" and "stop injustice", and try to find petty excuses to cancel others, often to boost their own egos
 
 |Impact|                 Negative                   |   Positive             |
 |:----:|:------------------------------------------:|:----------------------:|
