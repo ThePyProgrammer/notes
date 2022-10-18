@@ -2,7 +2,7 @@
 
 ## Global
 
-### Climate change
+### Climate Change
 The IPCC released its sixth report in 2022. In its summary for policy-makers, the report’s authors outlined a series of near-term, mid-term, and long-term risks. If global warming reaches 1.5°C in the near term (2021-2040), it would cause “unavoidable increases in multiple climate hazards,” as well as “multiple risks to ecosystems and humans.” In the long term, climate change will present major health issues, premature deaths, risks to cities and settlements, and other dangers. Mitigation is desperately needed – and fast. Because of climate change’s connection to other issues on this list, it’s one of the most serious challenges facing humanity.
 
 ### COVID-19
