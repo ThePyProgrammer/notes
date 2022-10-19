@@ -87,7 +87,12 @@ nav:
       - Home: CM5132/index.md
       - CM5132/energetics.md
       - CM5132/thermodynamics.md
-
+  - PO:
+      - Mechanics:
+          - Basic Mechanics: PO/mech/basic_mech.md
+          - Relativity: PO/mech/relativity.md
+      - Thermodynamics:
+          - Basic Thermodynamics: PO/thermal/basic_thermal.md
 
 extra:
     social:
