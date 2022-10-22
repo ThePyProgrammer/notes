@@ -773,6 +773,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -909,6 +916,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -954,7 +968,44 @@ v_y + \frac{g}{\alpha} &amp;= \left(u_y + \frac{g}{\alpha}\right) e^{-\alpha t} 
 v_y &amp;= \left(u_y + \frac{g}{\alpha} \right) e^{-\alpha t} - \frac{g}{\alpha}
 \end{align*}
 \]</div>
+<p>You can then integrate to get <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span>, assuming you start at the origin <span class="arithmatex">\(O(x, y)\)</span>:</p>
+<div class="arithmatex">\[
+\begin{align*}
+x &amp;= \int_0^t v_x \text{ }dt \\
+&amp;= u_x \int_0^t e^{-\alpha t}\text{ }dt \\
+&amp;= -\frac{u_x}\alpha \left[e^{-\alpha t} \right]_0^t \\
+&amp;= \frac{u_x}\alpha \left(1 - e^{-\alpha t} \right)
+\end{align*}
+\]</div>
+<p>As for <span class="arithmatex">\(y\)</span>:</p>
+<div class="arithmatex">\[
+\begin{align*}
+y &amp;= \int_0^t v_y \text{ }dt \\
+&amp;= \left(u_y + \frac{g}\alpha \right) \int_0^t e^{-\alpha t}\text{ }dt - \frac{g}{\alpha} \int_0^t dt \\
+&amp;= -\frac{1}\alpha\left(u_y + \frac{g}\alpha \right) \left[e^{-\alpha t} \right]_0^t - \frac{gt}{\alpha} \\
+&amp;= \frac{1}\alpha\left(u_y + \frac{g}\alpha \right) \left(1 - e^{-\alpha t} \right) - \frac{gt}{\alpha}
+\end{align*}
+\]</div>
+<p>When <span class="arithmatex">\(y = 0\)</span>, we can therefore use this very formula to get values:</p>
+<div class="arithmatex">\[
+\begin{align*}
+\frac{1}\alpha\left(u_y + \frac{g}\alpha \right) \left(1 - e^{-\alpha t} \right) - \frac{gt}{\alpha} &amp;= 0 \\
+\left(u_y + \frac{g}\alpha \right) \left(1 - e^{-\alpha t} \right) &amp;= gt \\
+\end{align*}
+\]</div>
+<p>I won't solve this because I don't know how to do so :).</p>
 <h3 id="slightly-harder-case-f_d-proportional-to-v2">Slightly Harder Case: <span class="arithmatex">\(F_D\)</span> proportional to <span class="arithmatex">\(v^2\)</span></h3>
+<div class="arithmatex">\[
+\begin{align*}
+F_D &amp;= (-\alpha mv^2)\hat v \\
+F_g &amp;= (-mg) \begin{pmatrix}0\\1\end{pmatrix} \\
+F_\text{net} = m \frac{d\vec v}{dt} &amp;= F_D + F_g \\
+&amp;= -\alpha m \sqrt{v_x^2 + v_y^2} \begin{pmatrix}v_x\\v_y\end{pmatrix} -mg \begin{pmatrix}0\\1\end{pmatrix} \\
+\frac{d\vec v}{dt} = \begin{pmatrix}\dot v_x \\\dot v_y\end{pmatrix} &amp;= \begin{pmatrix}-\alpha v_x\sqrt{v_x^2 + v_y^2}\\-\alpha v_y\sqrt{v_x^2 + v_y^2} -g\end{pmatrix}
+\end{align*}
+\]</div>
+<p>This gives rise to a set of coupled expressions, which does not sound fun to solve, and hence I won't :).</p>
+<h2 id="_1"></h2>
 
               
             </article>
