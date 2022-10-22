@@ -32,6 +32,7 @@ $$
 Q &= -\Delta mc^{2}\\
 &= (M - 2\alpha M)c^2 \\
 E_K &= (\frac{1}2-\alpha)Mc^2 \\
+p &= \\
 p &= \sqrt{2mE_K} \\
 &= Mc \sqrt{\alpha (1-2\alpha)} \\
 v &= c\sqrt{\frac{1}\alpha - 2}
