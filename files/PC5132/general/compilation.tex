@@ -121,7 +121,37 @@ where $H$ is the initial height of each pellet above the floor and m is the mass
 \begin{tcolorbox}
 \textbf{Solution: (at least I think)}
 
+Firstly, note that this is essentially a projectile motion question. Notably, you know $S_y$, $a_y$ and $v_y$, so can get an expression for $t$:
+\begin{align*}
+    S_y &= v_yt + \frac{1}2 a_y t^2 \\
+    -H &= \frac{1}2 (-g) t^2 \\
+    t &= \sqrt{\frac{2H}{g}}
+\end{align*}
 
+From here, you can get an expression for $\Delta v_f$ in terms of $\Delta v_i$ and $\Delta v_x$:
+\begin{align*}
+    \Delta x_f &= \Delta x_i + (\Delta v_x)t \\
+    &= \Delta x_i + (\Delta v_x) \sqrt{\frac{2H}{g}}
+\end{align*}
+
+By Walter White's Uncertainty Principle, we have the following fact too:
+\begin{align*}
+    \Delta x_i \Delta p &= \frac{\hbar}{2} \\
+    \Delta x_i &= \frac{\hbar}{2m\Delta v_x}
+\end{align*}
+
+Thus, you substitute $\Delta x_i$ in terms of $\Delta v_x$ as follows:
+\begin{align*}
+    \Delta x_f &= \frac{\hbar}{2m\Delta v_x} + (\Delta v_x) \sqrt{\frac{2H}{g}}
+\end{align*}
+
+To minimize, we differentiate the above with respect to $\Delta v_x$, and let this derivative be 0:
+\begin{align*}
+    \frac{d(\Delta x_f)}{d(\Delta v_x)} &= -\frac{\hbar}{2m(\Delta v_x)^2} + \sqrt{\frac{2H}{g}} \\
+    0 &= \sqrt{\frac{2H}{g}} -\frac{\hbar}{2m(\Delta v_x)^2} \\
+    \Delta v_x &= \sqrt{\frac{\hbar}{2m}} \left(\frac{2H}{g} \right)^{-\frac{1}4} \\
+    \Delta x_f &= \sqrt{\frac{\hbar}{2m}} \left(\frac{2H}{g} \right)^{\frac{1}4} + \sqrt{\frac{\hbar}{2m}} \left(\frac{2H}{g} \right)^{\frac{1}4} \\ &= \sqrt{\frac{2\hbar}{m}} \left(\frac{2H}{g} \right)^{\frac{1}4}
+\end{align*}
 
 \end{tcolorbox}
 
