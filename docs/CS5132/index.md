@@ -1,0 +1,1 @@
+Okay so I kinda suck at this subject, so here's some notes I made. Hopefully helps me :).
