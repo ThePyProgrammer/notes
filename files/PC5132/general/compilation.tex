@@ -1,0 +1,158 @@
+\documentclass[11pt]{article}
+
+% basic packages
+\usepackage[margin=1in]{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{notes}
+\usepackage{lipsum}
+
+% page formatting
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+
+\renewcommand{\sectionmark}[1]{\markright{\textsf{\arabic{section}. #1}}}
+\renewcommand{\subsectionmark}[1]{}
+\lhead{\textbf{\thepage} \ \ \nouppercase{\rightmark}}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\setlength{\headheight}{14pt}
+
+\linespread{1.03} % give a little extra room
+\setlength{\parindent}{0.2in} % reduce paragraph indent a bit
+\setcounter{secnumdepth}{2} % no numbered subsubsections
+\setcounter{tocdepth}{2} % no subsubsections in ToC
+
+\begin{document}
+
+% make title page
+\thispagestyle{empty}
+\bigskip \
+\vspace{0.1cm}
+
+\begin{center}
+{\fontsize{22}{22} \selectfont Compiled Notes for}
+\vskip 16pt
+{\fontsize{36}{36} \selectfont \bf \sffamily PC5132}
+\vskip 24pt
+{\fontsize{18}{18} \selectfont \rmfamily Prannaya Gupta} 
+\vskip 6pt
+{\fontsize{14}{14} \selectfont \ttfamily prannayagupta@gmail.com} 
+\vskip 24pt
+\end{center}
+
+{\parindent0pt \baselineskip=15.5pt Heve fun reading this man.}
+
+% make table of contents
+\newpage
+\microtoc
+\newpage
+
+% main content
+\section{Nuclear Binding Energy}
+\begin{align*}
+    \text{Binding Energy, B.E.} &= -\Delta mc^2 \\
+    \text{Binding Energy per Nucleon, B.E.}/A &= \frac{-\Delta mc^2}{A}
+\end{align*}
+
+
+
+
+
+\section{Properties of Particles}
+
+\subsection{Properties of a Photon}
+\begin{align*}
+    E &= hf = \frac{hc}\lambda \\
+    p &= \frac{h}\lambda
+\end{align*}
+
+\subsection{Properties of a Free Particle}
+
+\subsubsection{Wave-Particle Duality - De Broglie Wavelength}
+
+$$\lambda = \frac{h}p$$
+
+\subsubsection{Energy}
+\begin{align*}
+E^2 &= (pc)^2 + (mc^2)^2
+\end{align*}
+
+
+\section{Photoelectric Effect}
+
+\begin{align*}
+    E = hf &= K + \phi \\
+    &= eV_s + hf_o
+\end{align*}
+
+\section{Emission Spectra}
+\subsection{Rydberg's Formula}
+
+$$\frac{1}\lambda = R_\infty\left(\frac{1}{m^2} - \frac{1}{n^2} \right) \quad \implies \quad \lambda = \frac{m^2n^2}{(n^2-m^2)R_\infty}$$
+
+Here $R_\infty$ is the Rydberg Constant.
+
+\subsection{Excitation Energy}
+
+$$E = -hcR_\infty \frac{1}{n^2} = -\frac{\text{13.6 eV}}{n^2}$$
+
+\section{Heisenberg}
+
+Walter White.
+
+$$\Delta x \Delta p \geq \frac{h}{4\pi} = \frac{\hbar}{2}$$
+
+\subsection{Examples}
+
+\subsubsection{Wave Particle Duality Practice Question 1}
+
+A student on a ladder drops small pellets towards a point target on the floor. Show that, according to the uncertainty principle, the average miss distance must be at least
+
+$$\Delta x_f = \left(\frac{2\hbar}{m} \right)^\frac{1}{2} \left(\frac{2H}{g} \right)^\frac{1}{4}$$
+
+where $H$ is the initial height of each pellet above the floor and m is the mass of each pellet. Assume that the spread in impact points is given by $\Delta x_f = \Delta x_i + (\Delta v_x) t$.
+
+\begin{tcolorbox}
+\textbf{Solution: (at least I think)}
+
+Firstly, note that this is essentially a projectile motion question. Notably, you know $S_y$, $a_y$ and $v_y$, so can get an expression for $t$:
+\begin{align*}
+    S_y &= v_yt + \frac{1}2 a_y t^2 \\
+    -H &= \frac{1}2 (-g) t^2 \\
+    t &= \sqrt{\frac{2H}{g}}
+\end{align*}
+
+From here, you can get an expression for $\Delta v_f$ in terms of $\Delta v_i$ and $\Delta v_x$:
+\begin{align*}
+    \Delta x_f &= \Delta x_i + (\Delta v_x)t \\
+    &= \Delta x_i + (\Delta v_x) \sqrt{\frac{2H}{g}}
+\end{align*}
+
+By Walter White's Uncertainty Principle, we have the following fact too:
+\begin{align*}
+    \Delta x_i \Delta p &= \frac{\hbar}{2} \\
+    \Delta x_i &= \frac{\hbar}{2m\Delta v_x}
+\end{align*}
+
+Thus, you substitute $\Delta x_i$ in terms of $\Delta v_x$ as follows:
+\begin{align*}
+    \Delta x_f &= \frac{\hbar}{2m\Delta v_x} + (\Delta v_x) \sqrt{\frac{2H}{g}}
+\end{align*}
+
+To minimize, we differentiate the above with respect to $\Delta v_x$, and let this derivative be 0:
+\begin{align*}
+    \frac{d(\Delta x_f)}{d(\Delta v_x)} &= -\frac{\hbar}{2m(\Delta v_x)^2} + \sqrt{\frac{2H}{g}} \\
+    0 &= \sqrt{\frac{2H}{g}} -\frac{\hbar}{2m(\Delta v_x)^2} \\
+    \Delta v_x &= \sqrt{\frac{\hbar}{2m}} \left(\frac{2H}{g} \right)^{-\frac{1}4} \\
+    \Delta x_f &= \sqrt{\frac{\hbar}{2m}} \left(\frac{2H}{g} \right)^{\frac{1}4} + \sqrt{\frac{\hbar}{2m}} \left(\frac{2H}{g} \right)^{\frac{1}4} \\ &= \sqrt{\frac{2\hbar}{m}} \left(\frac{2H}{g} \right)^{\frac{1}4}
+\end{align*}
+
+\end{tcolorbox}
+
+\end{document}
