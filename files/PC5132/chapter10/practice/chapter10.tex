@@ -28,93 +28,80 @@ Unless otherwise stated:
 
 \section{Discussion Questions}
 \begin{questions}
-\question Determine:
+\question X-rays having an energy of 350 keV undergo Compton scattering from a target. The scattered rays are detected at 45.0\textdegree relative to the incident rays. Find.
 \begin{parts}
-    \part the momentum of photons with a frequency of $4.0 \times 10^{14}$ Hz.
+    \part the Compton shift at this angle
     \begin{tcolorbox}
         \textbf{Solution:}
-        $$p = \frac{h}\lambda = \frac{hf}{c} = 8.8347 \times 10^{-28}\text{ N s}$$
+        $$\Delta \lambda = \frac{h}{m_ec}(1-\cos 45^\circ) = 7.10103 \times 10^{-13}\text{ m}$$
     \end{tcolorbox}
-    
-    \part the momentum of photons with a wavelength of 400 nm.
+    \part the energy of the scattering x-ray, and
     \begin{tcolorbox}
         \textbf{Solution:}
-        $$p = \frac{h}\lambda = \frac{h}{400 \times 10^{-9}} = 1.6565 \times 10^{-27}\text{ N s}$$
+        First, we need to get the initial $\lambda_i$:
+        $$E_i = \frac{hc}{\lambda_i} \implies \lambda_i = \frac{hc}{E_i}$$
+        Thus, we know the following:
+        $$E_f = \frac{hc}{\lambda_f} = \frac{hc}{\frac{hc}{E_i} + \Delta \lambda} = \frac{1}{\frac{1}{E_i} + \frac{\Delta \lambda}{hc}} = 291.654\text{ keV} \approx 292\text{ keV} $$
     \end{tcolorbox}
-    
-    \part A beam of light of wavelength $\lambda$ is totally reflected at normal incidence by a plane mirror. The intensity of light is such that the photons hit the mirror at a rate $n$ per second. Given that the Planck constant is $h$, show that the force exerted on the mirror by this beam is $2nh/\lambda$.
+    \part the energy of the recoiling electron.
     \begin{tcolorbox}
-        \textbf{Solution:}
-        The change in momentum per photon is $2p = 2h/\lambda$. Thus, the total change in momentum over some time interval $t$ is $2nht/\lambda$. Thus, $F = p/t = 2nh/\lambda$.
+        $$E_e = \Delta E = 350 - 292 = 58\text{ keV}$$
     \end{tcolorbox}
 \end{parts}
 
-\question
-\begin{parts}
-    \part Determine the de Broglie wavelength of 
-    \begin{subparts}
-        \subpart a bullet of mass 30 g, and moving with speed of 300 $\text{m s}^{-1}$.
-        \begin{tcolorbox}
-            \textbf{Solution:}
-            $$p = mv = (0.030)(300) = 9 \text{ Ns} \implies \lambda = \frac{h}p = 7.3622 \times 10^{-35}\text{ m}$$
-        \end{tcolorbox}
+\question A 0.70 MeV photon is scattered by a free electron initially at rest such that the scattering angle of the scattered photon, $\theta$ is equal to that of the scattered electron $\varphi$.
 
-        \subpart an electron that has been accelerated from rest through a potential difference of 0.75 kV.
-        \begin{tcolorbox}
-            \textbf{Solution:}
-            \begin{align*}
-                E_f &= E_i + \Delta E \\
-                (m_e c^2)^2 + (pc)^2 &= (m_e c^2 + \Delta E)^2 \\
-                p &= \sqrt{ \left(2m_ec + \frac{\Delta E}{c}\right) \times \frac{\Delta E}{c}  } \\
-                \lambda &= \frac{h}{\sqrt{ \left(2m_ec + \frac{q_e V}{c}\right) \times \frac{q_e V}{c}  }} \\
-                &= 4.47948 \times 10^{-11}\text{ m}
-            \end{align*}
-        \end{tcolorbox}
-    \end{subparts}
-    \part In an electron diffraction experiment, the wavelength associated with an electron beam is determined to be 0.14 nm.
-    \begin{subparts}
-        \subpart Find the momentum of an electron in the beam.
-        \begin{tcolorbox}
-            \textbf{Solution:}
-            $$p = \frac{h}\lambda = \frac{6.626 \times 10^{-34}}{0.14 \times 10^{-9}} = 4.7329 \times 10^{-24} \text{ N s}$$
-        \end{tcolorbox}
-        \subpart If the electrons are initially at rest, through what potential difference should they be accelerated to acquire this momentum.
-        \begin{tcolorbox}
-            \textbf{Solution:}
-            \begin{align*}
-                \Delta E &= \sqrt{(m_ec^2)^2 + (pc)^2} - m_ec^2 \\
-                V &= \frac{1}{q_e} \left( \sqrt{(m_ec^2)^2 + (pc)^2} - m_ec^2 \right) \\\
-                &= 76.834 \text{ V}
-            \end{align*}
-        \end{tcolorbox}
-    \end{subparts}
-\end{parts}
-
-\question
 \begin{parts}
-    \part An electron has kinetic energy 3.00 eV. Find its wavelength.
+    \part Determine the angles $\theta$ and $\varphi$.
     \begin{tcolorbox}
-        \textbf{Solution:}
-        $$p = \sqrt{2m_eE_k} \implies \lambda = \frac{h}{\sqrt{2m_eE_k}} = 7.0853 \times 10^{10}\text{ m}$$
+        \textbf{Solution:} \\
+        Note that since both angles are the same, the magnitudes of the momentum should be equal. The initial momentum is given by:
+        $$p = \frac{E}{c} = 3.73333 \times 10^{-22}\text{ N s} = 2p_f \cos\theta$$
+        Note that by Compton Scattering, 
+        $$\Delta \lambda = \frac{h}{m_ec}(1-\cos \theta) \implies \frac{1}{p_f} = \frac{1}{p} + \frac{1-\cos \theta}{m_e c}$$
+        Hence,
+        \begin{align*}
+            \frac{2\cos\theta - 1}{p} &= \frac{1-\cos \theta}{m_e c} \\
+            p(1 - \cos\theta) &= m_e c(2\cos\theta - 1) \\
+            (2m_e c + p)\cos\theta &= p + m_e c \\
+            \theta = \varphi &= 45.339^\circ
+        \end{align*}
     \end{tcolorbox}
-    \part A photon has energy 3.00 eV. Find it's wavelength.
+
+    \part Determine the energy and momentum of the scattered photon.
     \begin{tcolorbox}
         \textbf{Solution:}
-        $$\lambda = \frac{hc}E = 4.14125 \times 10^{-7}\text{ m} \approx 414\text{ nm}$$
+        $$p_f = \frac{p}{2\cos\theta} = 2.65561 \times 10^{-22}\text{ N s}$$
+        $$E_f = p_f c = 0.497927\text{ MeV} $$
+    \end{tcolorbox}
+    \part Determine the kinetic energy and momentum of the scattered electron.
+    \begin{tcolorbox}
+        \textbf{Solution:}
+        $$p_f = \frac{p}{2\cos\theta} = 2.65561 \times 10^{-22}\text{ N s}$$
+        $$E = E_i - E_f = 0.70 - 0.497927 = 0.202073\text{ MeV}$$
     \end{tcolorbox}
 \end{parts}
 
-\question The uncertainty in the position and velocity of a particle are $10^{-11}$ m and $7.9 \times 10^2$ m/s respectively. By considering Heisenberg's Uncertainty Principle, suggest what this particle may be.
-\begin{tcolorbox}
-    \textbf{Solution:}
-    \begin{align*}
-        \Delta x \Delta p &\geq \frac{\hbar}{2} \\
-        m &\geq \frac{\hbar}{2\Delta x \Delta v} \\
-        &= 6.67443 \times 10^{-27}\text{ kg} \\
-        m &\geq 4.0207\text{ u}.
-    \end{align*}
-    Thus, it is likely to be an Alpha Particle.
-\end{tcolorbox}
+\question In a Compton Scattering experiment, x-ray photons scattered at 60\textdegree change by 2\% in wavelength.
+\begin{parts}
+    \part Calculate the wavelength of the incident x-rays.
+    \begin{tcolorbox}
+        \textbf{Solution:}
+        $$(2\%)\lambda = \frac{h}{m_ec}(1 - \cos 60^\circ) \implies \lambda = \frac{25h}{m_ec} = 6.0611\times 10^{-11}\text{ m}$$
+    \end{tcolorbox}
+    \part What is the \textbf{maximum} possible wavelength of the output x-ray beam?
+    \begin{tcolorbox}
+        $$\lambda_\text{max} = \frac{hc}{E}$$
+    \end{tcolorbox}
+\end{parts}
+
+\question An electron (rest energy 0.511 MeV) moves with speed 0.800 c. Determine:
+\begin{parts}
+    \part its total energy,
+    \begin{tcolorbox}
+        $$E = \sqrt{(pc)^2 + E_\text{rest}^2} = E_\text{rest} \sqrt{1 + \beta^2} = $$
+    \end{tcolorbox}
+\end{parts}
 
 \end{questions}
 \newpage
@@ -122,76 +109,7 @@ Unless otherwise stated:
 \section{Practice Questions}
 
 \begin{questions}
-\question A student on a ladder drops small pellets towards a point target on the floor. 
-\begin{parts}
-    \part Show that, according to the uncertainty principle, the average miss distance must be at least
-    $$\Delta x_f = \left(\frac{2\hbar}{m} \right)^\frac{1}{2} \left(\frac{2H}{g} \right)^\frac{1}{4}$$
-    
-    where $H$ is the initial height of each pellet above the floor and m is the mass of each pellet. Assume that the spread in impact points is given by $\Delta x_f = \Delta x_i + (\Delta v_x) t$.
-    
-    \begin{tcolorbox}
-    \textbf{Solution:}
-    
-    Firstly, note that this is essentially a projectile motion question. Notably, you know $S_y$, $a_y$ and $v_y$, so can get an expression for $t$:
-    $$S_y = v_yt + \frac{1}2 a_y t^2 \implies -H = \frac{1}2 (-g) t^2 \implies t = \sqrt{\frac{2H}{g}}$$
-    
-    From here, you can get an expression for $\Delta v_f$ in terms of $\Delta v_i$ and $\Delta v_x$:
-    $$\Delta x_f = \Delta x_i + (\Delta v_x)t = \Delta x_i + (\Delta v_x) \sqrt{\frac{2H}{g}}$$
-    
-    By Heisenberg's Uncertainty Principle, we have the following fact too:
-    $$\Delta x_i \Delta p = \frac{\hbar}{2} \implies \Delta x_i = \frac{\hbar}{2m\Delta v_x}$$
-    
-    Thus, you substitute $\Delta x_i$ in terms of $\Delta v_x$ as follows:
-    \begin{align*}
-        \Delta x_f &= \frac{\hbar}{2m\Delta v_x} + (\Delta v_x) \sqrt{\frac{2H}{g}}
-    \end{align*}
-    
-    To minimize, we differentiate the above with respect to $\Delta v_x$, and let this derivative be 0:
-    \begin{align*}
-        \frac{d(\Delta x_f)}{d(\Delta v_x)} &= -\frac{\hbar}{2m(\Delta v_x)^2} + \sqrt{\frac{2H}{g}} = 0 \\
-        \Delta v_x &= \sqrt{\frac{\hbar}{2m}} \left(\frac{2H}{g} \right)^{-\frac{1}4} \\
-        \Delta x_f &= \sqrt{\frac{\hbar}{2m}} \left(\frac{2H}{g} \right)^{\frac{1}4} + \sqrt{\frac{\hbar}{2m}} \left(\frac{2H}{g} \right)^{\frac{1}4} \\ &= \sqrt{\frac{2\hbar}{m}} \left(\frac{2H}{g} \right)^{\frac{1}4}
-    \end{align*}
-    \end{tcolorbox}
-    \newpage
-    \part If $H = 2.00$ m and $m = 0.500$ g, what is $\Delta x_f$?
-    \begin{tcolorbox}
-        \textbf{Solution:}
-        $$\Delta x_f = \sqrt{\frac{6.626 \times 10^{-34}}{5.00\pi \times 10^{-4}}} \left(\frac{4.00}{9.81} \right)^{\frac{1}4} = 5.18995 \times 10^{-16}\text{ m}$$
-    \end{tcolorbox}
-\end{parts}
-
-\question
-\begin{parts}
-    \part Show that the kinetic energy of a nonrelativistic particle can we written in terms of its momentum as $K = p^2/2m$.
-    \begin{tcolorbox}
-        \textbf{Solution:}
-        $$E_k = \frac{1}2 mv^2 = \frac{(mv)^2}{2m} = \frac{p^2}{2m}$$
-    \end{tcolorbox}
-
-    \part Use the result from (a) to find the minimum kinetic energy of a proton confined within a nucleus having a diameter of $1.00 \times 10^{-15}$ m.
-    \begin{tcolorbox}
-        \textbf{Solution:}
-        By Heisenberg's Uncertainty Principle,
-        $$\Delta x \Delta p \geq \frac{\hbar}{2} \implies \Delta p \geq \frac{\hbar}{2\Delta x}$$
-        Notably, $\Delta x = D = 1.00 \times 10^{-15}$ m. Using the result from in (a), we get the following:
-        \begin{align*}
-            \Delta p &\geq \frac{\hbar}{2\Delta x} \\
-            E_\text{min} &= \frac{1}{2m}\left(\frac{\hbar}{2\Delta x} \right)^2 \\
-            &= 5.20256 \text{ MeV}
-        \end{align*}
-    \end{tcolorbox}
-\end{parts}
-
-\question An electron ($m_e = 9.11 \times 10^{-31}\text{ kg}$) and a bullet ($m = 0.0200\text{ kg}$) each have a velocity of magnitude of 500 m/s, accurate to within 0.0100\%. Within what limits could we determine the position of the objects along the direction of the velocity.
-
-\begin{tcolorbox}
-    \textbf{Solution:}\\
-    For Electron:
-    $$\Delta x = \frac{h}{4\pi \Delta p} = \frac{h}{4\pi m_e (0.05)} = 1.15759 \text{ mm}$$
-    For Bullet:
-    $$\Delta x = \frac{h}{4\pi \Delta p} = \frac{h}{4\pi m (0.05)} = 5.27280 \times 10^{-32}\text{ m}$$
-\end{tcolorbox}
+\question 
 \end{questions}
 
 
