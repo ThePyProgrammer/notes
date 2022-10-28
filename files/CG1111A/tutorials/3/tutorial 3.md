@@ -53,7 +53,34 @@ $$
 ## Question 5
 > **Derive an expression for the voltage ripple at the load RL in the following circuit, in terms of the average load voltage $V_\text{Load}$, the AC power supply’s frequency $f_s$, the capacitance $C$, and the load resistance $R_L$.**
 
-![](files/CG1111A/tutorials/tutorial%203/q5.png)
+![](q5.png)
+
+I assume here that the twho components exit in parallel in the middle of said diode bridge rectifier.
+
+Average load voltage, $V_\text{Load}$ is simply the average of the absolute value of the sin curve, which we know is actually just the same as normal RMS.
+
+
+
+Let's consider one half cycle:
+
+
+
+
+
+
+
+## Question 6
+> **A full-wave rectifier is connected to a resistive load of $R = 100\text{ }\Omega$, with an average voltage of 9 V. The AC source has a frequency of $100\pi$ rad/s. Assume the diodes are ideal with no voltage drop. If a 1.5 mF capacitor is connected as a filter, calculate the voltage ripple.**
+
+
+
+
+
+
+
+
+
+
 
 
 
