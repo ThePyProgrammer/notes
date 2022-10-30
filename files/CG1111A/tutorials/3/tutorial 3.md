@@ -60,7 +60,6 @@ I assume here that the twho components exit in parallel in the middle of said di
 Average load voltage, $V_\text{Load}$ is simply the average of the absolute value of the sin curve, which we know is actually just the same as normal RMS.
 
 
-
 Let's consider one half cycle:
 
 

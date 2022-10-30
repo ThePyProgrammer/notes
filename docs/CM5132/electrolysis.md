@@ -1,0 +1,1 @@
+In electrolysis, you **FORCE** reactions to take place, by running a current (via a source).
